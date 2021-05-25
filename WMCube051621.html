@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initia-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <style>
+        .WMCubeScene {
+            width: 200px;
+            height: 200px;
+            perspective: 400px;
+            border-radius: 100%;
+            background: #63061f;
+        }
+        .WMCube {
+            transform-style: preserve-3d;
+            transform: rotateY(135deg);
+            animation: cubeRotate 30s linear infinite;
+        }
+        @keyframes cubeRotate {
+            from { transform: rotateY(720deg) rotateX(0deg) rotateZ(0deg); }
+            to { transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg); }
+        }
+        .WMCubeSide {
+            position: absolute;
+        }
+        .WMCubeBG {
+            fill: #63061f;
+        }
+        .WMCubeLetter {
+            fill: #ffca5d;
+        }
+        main {
+            padding: 100px;
+        }
+        .cubeFaceTop {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .cubeFaceBottom {
+            transform: rotateX(-90deg) translateZ(100px) rotateZ(180deg);
+        }
+
+        .cubeFaceRight {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .cubeFaceLeft {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        .cubeFaceFront {
+            transform: rotateX(0deg) translateZ(100px);
+        }
+        .cubeFaceBack {
+            transform: rotateX(-180deg) translateZ(100px) rotateZ(180deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="WMCubeScene">
+            <div class="WMCube">
+                <svg class="WMCubeSide cubeFaceBack" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                    <g>
+                        <rect class="WMCubeBG" width="500" height="500" />
+                    </g>
+                    <g>
+                        <polygon class="WMCubeLetter"
+                            points="400 0 400 400 300 400 300 0 200 0 200 400 100 400 100 0 0 0 0 400 0 500 500 500 500 400 500 0 400 0" />
+                    </g>
+                </svg>
+                <svg class="WMCubeSide cubeFaceLeft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                    <defs>
+                        <style>
+                            .WMCubeMSideOuter {
+                                fill: none;
+                                stroke: #63061f;
+                                stroke-miterlimit: 10;
+                                stroke-width: 15px;
+                            }
+                        </style>
+                    </defs>
+                    <g>
+                        <rect class="WMCubeBG" width="500" height="500" />
+                    </g>
+                    <g>
+                        <polygon class="WMCubeLetter"
+                            points="0.05 0 0.05 100 0 100 0 500 100 500 100 100 200 100 200 500 300 500 300 100 400 100 400 500 500 500 500 100 500.05 100 500.05 0 0.05 0" />
+                    </g>
+                    <g>
+                        <rect class="WMCubeMSideOuter" x="7.6" y="7.6" width="485" height="485" />
+                    </g>
+                </svg>
+                <svg class="WMCubeSide cubeFaceRight" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                    <defs>
+                        <style>
+                            .WMCubeMSideOuter {
+                                fill: none;
+                                stroke: #63061f;
+                                stroke-miterlimit: 10;
+                                stroke-width: 15px;
+                            }
+                        </style>
+                    </defs>
+                    <g>
+                        <rect class="WMCubeBG" width="500" height="500" />
+                    </g>
+                    <g>
+                        <polygon class="WMCubeLetter"
+                            points="0.05 0 0.05 100 0 100 0 500 100 500 100 100 200 100 200 500 300 500 300 100 400 100 400 500 500 500 500 100 500.05 100 500.05 0 0.05 0" />
+                    </g>
+                    <g>
+                        <rect class="WMCubeMSideOuter" x="7.6" y="7.6" width="485" height="485" />
+                    </g>
+                </svg>
+                <svg class="WMCubeSide cubeFaceFront" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                    <g>
+                        <rect class="WMCubeBG" width="500" height="500"/>
+                    </g>
+                    <g>
+                        <polygon class="WMCubeLetter"
+                            points="400 0 400 400 300 400 300 0 200 0 200 400 100 400 100 0 0 0 0 400 0 500 500 500 500 400 500 0 400 0" />
+                    </g>
+                </svg>
+                <svg class="WMCubeSide cubeFaceTop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                    <g>
+                        <rect class="WMCubeBG" width="500" height="500" />
+                    </g>
+                    <g>
+                        <polygon class="WMCubeLetter"
+                            points="400 0 400 400 300 400 300 0 200 0 200 400 100 400 100 0 0 0 0 400 0 500 500 500 500 400 500 0 400 0" />
+                    </g>
+                </svg>
+                <svg class="WMCubeSide cubeFaceBottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                    <defs>
+                        <style>
+                            .WMCubeMSideOuter {
+                                fill: none;
+                                stroke: #63061f;
+                                stroke-miterlimit: 10;
+                                stroke-width: 15px;
+                            }
+                        </style>
+                    </defs>
+                    <g>
+                        <rect class="WMCubeBG" width="500" height="500" />
+                    </g>
+                    <g>
+                        <polygon class="WMCubeLetter"
+                            points="0.05 0 0.05 100 0 100 0 500 100 500 100 100 200 100 200 500 300 500 300 100 400 100 400 500 500 500 500 100 500.05 100 500.05 0 0.05 0" />
+                    </g>
+                    <g>
+                        <rect class="WMCubeMSideOuter" x="7.6" y="7.6" width="485" height="485" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <hr />
+        <p>Copyright &copy; 2021 by Company Name</p>
+    </footer>
+</body>
+</html>
