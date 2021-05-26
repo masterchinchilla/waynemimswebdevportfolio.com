@@ -418,3 +418,51 @@ span.hamLine3Closing {
     0% {opacity:1;}
     100% {opacity:0;}
 }
+.WMCubeScene {
+            width: 200px;
+            height: 200px;
+            perspective: 400px;
+            border-radius: 100%;
+            background: #63061f;
+        }
+        .WMCube {
+            transform-style: preserve-3d;
+            transform: rotateY(135deg);
+            animation: cubeRotate 30s linear infinite;
+        }
+        @keyframes cubeRotate {
+            from { transform: rotateY(720deg) rotateX(0deg) rotateZ(0deg); }
+            to { transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg); }
+        }
+        .WMCubeSide {
+            position: absolute;
+        }
+        .WMCubeBG {
+            fill: #63061f;
+        }
+        .WMCubeLetter {
+            fill: #ffca5d;
+        }
+        main {
+            padding: 100px;
+        }
+        .cubeFaceTop {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .cubeFaceBottom {
+            transform: rotateX(-90deg) translateZ(100px) rotateZ(180deg);
+        }
+
+        .cubeFaceRight {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .cubeFaceLeft {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        .cubeFaceFront {
+            transform: rotateX(0deg) translateZ(100px);
+        }
+        .cubeFaceBack {
+            transform: rotateX(-180deg) translateZ(100px) rotateZ(180deg);
+        }
