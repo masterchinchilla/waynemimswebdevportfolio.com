@@ -13,56 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d8de664714.js" crossorigin="anonymous"></script>
-   <style>
-        .WMCubeScene {
-            width: 200px;
-            height: 200px;
-            perspective: 150px;
-            /*<!-- border-radius: 100%;
-            background: #63061f; -->*/
-        }
-        .WMCube {
-            transform-style: preserve-3d;
-            transform: rotateY(135deg);
-            animation: cubeRotate 30s linear infinite;
-        }
-        @keyframes cubeRotate {
-            from { transform: rotateY(720deg) rotateX(0deg) rotateZ(0deg); }
-            to { transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg); }
-        }
-        .WMCubeSide {
-            position: absolute;
-        }
-        .WMCubeBG {
-            fill: #63061f;
-        }
-        .WMCubeLetter {
-            fill: #ffca5d;
-        }
-        main {
-            padding: 100px;
-        }
-        .cubeFaceTop {
-            transform: rotateX(90deg) translateZ(32px);
-        }
-        .cubeFaceBottom {
-            transform: rotateX(-90deg) translateZ(32px) rotateZ(180deg);
-        }
-
-        .cubeFaceRight {
-            transform: rotateY(90deg) translateZ(32px);
-        }
-        .cubeFaceLeft {
-            transform: rotateY(-90deg) translateZ(32px);
-        }
-
-        .cubeFaceFront {
-            transform: rotateX(0deg) translateZ(32px);
-        }
-        .cubeFaceBack {
-            transform: rotateX(-180deg) translateZ(32px) rotateZ(180deg);
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -116,7 +66,8 @@
                 </li>
             </ul>
         </nav>
-         <div class="WMCubeScene">
+        <div class="WMCubeRow"> 
+          <div class="WMCubeScene">
             <div class="WMCube">
                 <svg class="WMCubeSide cubeFaceBack" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
                     <g>
@@ -212,6 +163,7 @@
                     </g>
                 </svg>
             </div>
+        </div>
         </div>
         <h1 class="nameSiteTitle">Wayne Mims Web Development</h1>
          <h1 class="hiddenHeaders">Summary Statement</h1>

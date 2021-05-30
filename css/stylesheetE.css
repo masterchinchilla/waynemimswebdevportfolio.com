@@ -21,11 +21,13 @@ h1 {
     font-weight: bold;
 }
 h1.nameSiteTitle {
-	font-family: "arial black";
-  -webkit-text-stroke: 2px black;
+	/*font-family: "arial black";
+  -webkit-text-stroke: 2px black;*/
   font-size: 300%;
-  line-height: 1.5;
-  color: #ffc100;
+  line-height: 1;
+  /*color: #ffc100;*/
+  color: white;
+  text-shadow: 3px 3px 6px #ff4500, 3px -3px 6px #ff4500, -3px 3px 6px #ff4500, -3px -3px 6px #ff4500;
 }
 nav, section, ul {
   width: 100%;
@@ -418,17 +420,22 @@ span.hamLine3Closing {
     0% {opacity:1;}
     100% {opacity:0;}
 }
+.WMCubeRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .WMCubeScene {
-            width: 200px;
-            height: 200px;
-            perspective: 400px;
+            width: 125px;
+            height: 125px;
+            perspective: 150px;
             border-radius: 100%;
-            background: #63061f;
+            background: #FBCC04;
         }
         .WMCube {
             transform-style: preserve-3d;
             transform: rotateY(135deg);
-            animation: cubeRotate 30s linear infinite;
+            /*animation: cubeRotate 30s linear infinite;*/
         }
         @keyframes cubeRotate {
             from { transform: rotateY(720deg) rotateX(0deg) rotateZ(0deg); }
@@ -438,31 +445,34 @@ span.hamLine3Closing {
             position: absolute;
         }
         .WMCubeBG {
-            fill: #63061f;
+            fill: #FBCC04;
         }
         .WMCubeLetter {
-            fill: #ffca5d;
+            fill: white;
         }
-        main {
-            padding: 100px;
+        .WMCubeMSideOuter {
+          fill: none;
+          stroke: #FBCC04;
+          stroke-miterlimit: 10;
+          stroke-width: 15px;
         }
         .cubeFaceTop {
-            transform: rotateX(90deg) translateZ(100px);
+            transform: rotateX(90deg) translateZ(32px);
         }
         .cubeFaceBottom {
-            transform: rotateX(-90deg) translateZ(100px) rotateZ(180deg);
+            transform: rotateX(-90deg) translateZ(32px) rotateZ(180deg);
         }
 
         .cubeFaceRight {
-            transform: rotateY(90deg) translateZ(100px);
+            transform: rotateY(90deg) translateZ(32px);
         }
         .cubeFaceLeft {
-            transform: rotateY(-90deg) translateZ(100px);
+            transform: rotateY(-90deg) translateZ(32px);
         }
 
         .cubeFaceFront {
-            transform: rotateX(0deg) translateZ(100px);
+            transform: rotateX(0deg) translateZ(32px);
         }
         .cubeFaceBack {
-            transform: rotateX(-180deg) translateZ(100px) rotateZ(180deg);
+            transform: rotateX(-180deg) translateZ(32px) rotateZ(180deg);
         }
