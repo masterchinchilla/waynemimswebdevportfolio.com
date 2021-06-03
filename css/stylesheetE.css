@@ -27,7 +27,7 @@ h1.nameSiteTitle {
   line-height: 1;
   /*color: #ffc100;*/
   color: white;
-  text-shadow: 3px 3px 6px #ff4500, 3px -3px 6px #ff4500, -3px 3px 6px #ff4500, -3px -3px 6px #ff4500;
+  text-shadow: 3px 3px 6px #de4c36, 3px -3px 6px #de4c36, -3px 3px 6px #de4c36, -3px -3px 6px #de4c36;
 }
 nav, section, ul {
   width: 100%;
@@ -79,7 +79,7 @@ figure svg {
 }
 i {
   font-size: 2rem;
-  color: #ff4500;
+  color: #de4c36;
   text-shadow: none;
 }
 a {
@@ -95,6 +95,9 @@ nav ul {
   width: 85%;
   margin: 0;
   padding: 0;
+}
+h2.taglineSiteSubtitle {
+  padding: 1.5rem 0 3rem 0;
 }
 li.skillIcon {
   box-shadow: 1px 1px 5px grey;
@@ -430,7 +433,8 @@ span.hamLine3Closing {
             height: 125px;
             perspective: 150px;
             border-radius: 100%;
-            background: #FBCC04;
+            /*background: #de4c36;*/
+            background: #DE3636;
         }
         .WMCube {
             transform-style: preserve-3d;
@@ -445,16 +449,16 @@ span.hamLine3Closing {
             position: absolute;
         }
         .WMCubeBG {
-            fill: #FBCC04;
+            fill: #DE3636;
         }
         .WMCubeLetter {
             fill: white;
         }
         .WMCubeMSideOuter {
           fill: none;
-          stroke: #FB0504;
+          /*stroke: #FB0504;
           stroke-miterlimit: 10;
-          stroke-width: 15px;
+          stroke-width: 15px;*/
         }
         .cubeFaceTop {
             transform: rotateX(90deg) translateZ(32px);
