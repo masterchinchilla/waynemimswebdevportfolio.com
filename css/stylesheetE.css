@@ -428,8 +428,10 @@ span.hamLine3Closing {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .WMCubeScene {
+  z-index: 1;
             width: 125px;
             height: 125px;
             perspective: 150px;
@@ -484,3 +486,53 @@ span.hamLine3Closing {
         .WNCubeBGCircle {
           position: absolute;
         }
+.topCurveText {
+  margin: 0 0 190px 0;
+  padding: 0;
+  background: white;
+  color: red;
+  display: inline-block;
+  position: absolute;
+  right: 50%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 100%;
+  background: white;
+}
+.topCurveText span {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  /*max-width: min-content;*/
+  border: solid 1px black;
+  position: absolute;
+  transform: rotate(-70deg);
+  height: 190px;
+}
+.topCurveText span:nth-of-type(2) {
+  transform: rotate(-54deg)
+}
+.topCurveText span:nth-of-type(3) {
+  transform: rotate(-38deg)
+}
+.topCurveText span:nth-of-type(4) {
+  transform: rotate(-22deg)
+}
+.topCurveText span:nth-of-type(5) {
+  transform: rotate(-6deg)
+}
+.topCurveText span:nth-of-type(6) {
+  transform: rotate(10deg)
+}
+.topCurveText span:nth-of-type(7) {
+  transform: rotate(23deg)
+}
+.topCurveText span:nth-of-type(8) {
+  transform: rotate(39deg)
+}
+.topCurveText span:nth-of-type(9) {
+  transform: rotate(55deg)
+}
+.topCurveText span:nth-of-type(10) {
+  transform: rotate(72deg)
+}
