@@ -190,9 +190,17 @@ img.projectPlanEx {
   border: solid 1px grey;
   margin: 0.5rem;
 }
+p.certsP {
+  width: 100%;
+}
+figure.certFig {
+  min-height: 20rem;
+  max-height: 40rem;
+}
 img.cert {
-    width: auto;
-    height: 20vh;
+    /*max-height: 20vh;*/
+    width: 100%;
+    height: auto;
     padding: 0.25rem;
 }
 img.cert:hover {
