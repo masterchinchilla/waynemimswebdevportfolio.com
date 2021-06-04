@@ -73,13 +73,14 @@ figcaption.skillsNavFigCap {
 figure img {
   height: 2rem;
 }
-figure svg {
+.navImg {
   height: 2rem;
-  margin-bottom: -0.5rem;
+  fill: #DE3636;
+  margin: 0.25rem;
 }
 i {
   font-size: 2rem;
-  color: #de4c36;
+  color: #DE3636;
   text-shadow: none;
 }
 a {
@@ -161,9 +162,9 @@ figure.moreInfoOnSectionLink {
     justify-content: space-between;
     flex-wrap: nowrap;
 }
-figure.moreInfoOnSectionLink:hover {
+/* figure.moreInfoOnSectionLink:hover {
   height: 4.5rem;
-}
+} */
 figure.moreInfoOnSectionLink img:hover {
   border-style: inset;
 }
@@ -245,21 +246,21 @@ footer nav ul {
 footer nav li {
   min-width: 0;
 }
-footer img {
+footer svg {
   height: 1.5rem;
   min-width: 0;
   border-radius: 0;
 }
 footer i {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: 0 0.25rem;
 }
-footer img:hover {
+footer svg:hover {
   height: 1.7rem;
   width: 1.7rem;
 }
 footer i:hover {
-font-size: 2.2rem;
+font-size: 2.5rem;
 }
 ul.siteMapWhole {
 	column-count: 2;
@@ -479,4 +480,7 @@ span.hamLine3Closing {
         }
         .cubeFaceBack {
             transform: rotateX(-180deg) translateZ(32px) rotateZ(180deg);
+        }
+        .WNCubeBGCircle {
+          position: absolute;
         }
