@@ -44,6 +44,9 @@ h1.nameSiteTitle {
 nav, section, ul {
   width: 100%;
 }
+nav.topNav, nav.topNav ul {
+  background: none;
+}
 main, footer, nav, section, details, summary, div, ul, li, figure, figcaption, h1, h2, h3, h4, p, span, img {
   display: flex;
   flex-wrap: wrap;
@@ -59,7 +62,7 @@ main, footer, nav, section, details, summary, div, ul, li, figure, figcaption, h
   
 }
   nav, ul {
-    background: rgba(255, 255, 255, 0.95)
+    background: #FFFFFF;
   }
 main {
   /*background-color: rgba(255, 255, 255, 0.5);*/
@@ -71,7 +74,7 @@ main {
 }
 figure.navFig {
   font-size: 0.8rem;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: #FFFFFF;
   min-width: 0;
   width: 3.5rem;
   height: 4rem;
@@ -80,6 +83,8 @@ figure.navFig {
   line-height: 1em;
 }
 figure.navFig:hover {
+  position: relative;
+  bottom: 1rem;
   height: 4.2rem;
   width: 3.7rem;
 }
@@ -631,7 +636,7 @@ span.hamLine3Closing {
 }
 .thought {
   /* display:flex; */
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #FFFFFF;
   padding:20px;
   border-radius:30px;
   min-width:40px;
@@ -646,7 +651,7 @@ span.hamLine3Closing {
 .thought:before,
 .thought:after {
   content:"";
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #FFFFFF;
   border-radius:50%;
   display:block;
   position:absolute;
