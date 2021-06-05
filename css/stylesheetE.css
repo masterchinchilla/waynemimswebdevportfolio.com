@@ -3,6 +3,19 @@ body {
   font-size: 13pt;
   margin: 0;
 }
+div.BGContainer {  
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  z-index: -999;
+  background-image: linear-gradient(90deg, rgb(52, 52, 52),rgb(168, 168, 168)),linear-gradient(45deg, rgb(67, 25, 34) 0%, rgb(67, 25, 34) 45%,rgb(104, 41, 41) 45%, rgb(104, 41, 41) 62%,rgb(141, 58, 49) 62%, rgb(141, 58, 49) 68%,rgb(178, 74, 56) 68%, rgb(178, 74, 56) 77%,rgb(215, 91, 64) 77%, rgb(215, 91, 64) 92%,rgb(252, 107, 71) 92%, rgb(252, 107, 71) 100%),linear-gradient(135deg, rgb(67, 25, 34) 0%, rgb(67, 25, 34) 45%,rgb(104, 41, 41) 45%, rgb(104, 41, 41) 62%,rgb(141, 58, 49) 62%, rgb(141, 58, 49) 68%,rgb(178, 74, 56) 68%, rgb(178, 74, 56) 77%,rgb(215, 91, 64) 77%, rgb(215, 91, 64) 92%,rgb(252, 107, 71) 92%, rgb(252, 107, 71) 100%); background-blend-mode:overlay,overlay,normal;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 header {
   /* background-color: rgba(255, 255, 255, 0.4); */
   color: rgb(0, 0, 0);
@@ -11,10 +24,8 @@ header {
   padding-top: 5px;
   font-weight: bolder;
   line-height: 1.5em;
-  background-image: url("https://lh3.googleusercontent.com/bsfWzrbOTsTThj5pscNaHDkyxOdkU-AhPyNyx-lsCOBpoL9PHbSJJ_S7zqF7T31Ll1YG45c-AMAunk_fNsVRFv0yMJvYENtN573jN_nkUt4zVPuggTq6IYq1ccfXXkMc5Df0jIxVRQ=w2400");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /*background-image: url("https://lh3.googleusercontent.com/bsfWzrbOTsTThj5pscNaHDkyxOdkU-AhPyNyx-lsCOBpoL9PHbSJJ_S7zqF7T31Ll1YG45c-AMAunk_fNsVRFv0yMJvYENtN573jN_nkUt4zVPuggTq6IYq1ccfXXkMc5Df0jIxVRQ=w2400");*/
+  
 }
 h1 {
     font-size: 2rem;
@@ -45,9 +56,13 @@ main, footer, nav, section, details, summary, div, ul, li, figure, figcaption, h
   margin: 0.25rem;
   border-radius: 20px;
   min-width: 4rem;
+  
 }
+  nav, ul {
+    background: rgba(255, 255, 255, 0.95)
+  }
 main {
-  background-color: white;
+  /*background-color: rgba(255, 255, 255, 0.5);*/
   border-radius: 20px 20px 0 0;
   width: -webkit-fill-available;
   margin: 0;
@@ -56,7 +71,7 @@ main {
 }
 figure.navFig {
   font-size: 0.8rem;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.85);
   min-width: 0;
   width: 3.5rem;
   height: 4rem;
@@ -346,7 +361,7 @@ div.hamMenuVisible ul {
   height: 6px;
   min-width: 0px;
   width: 35px;
-  background: #000000;
+  background: #DE3636;
   border-radius: 9px;
   opacity: 1;
   left: 0px;
@@ -395,28 +410,28 @@ span.hamLine3Closing {
 	animation-fill-mode: forwards;
 }
 @keyframes hamOpenTop {
-    from { transform: translateY(0px) rotate(0deg); background-color: black;}
+    from { transform: translateY(0px) rotate(0deg); background-color: #DE3636;}
     to { transform: translateY(10px) rotate(135deg); background-color: red;}
 }
 @keyframes hamCloseTop {
     from { transform: translateY(10px) rotate(135deg); background-color: red;}
-    to { transform: translateY(0px) rotate(0deg); background-color: black;}
+    to { transform: translateY(0px) rotate(0deg); background-color: #DE3636;}
 }
 @keyframes hamOpenMiddle {
-    0% {opacity:1; background-color: black;}
+    0% {opacity:1; background-color: #DE3636;}
     100% {opacity:0; background-color: red;}
 }
 @keyframes hamCloseMiddle {
 	0% {opacity:0; background-color: red;}
-	100% {opacity:1; background-color: black;}
+	100% {opacity:1; background-color: #DE3636;}
 }
 @keyframes hamOpenBottom {
-    from { transform: translateY(0px) rotate(0deg); background-color: black;}
+    from { transform: translateY(0px) rotate(0deg); background-color: #DE3636;}
     to { transform: translateY(-10px) rotate(-135deg); background-color: red;}
 }
 @keyframes hamCloseBottom {
     from { transform: translateY(-10px) rotate(-135deg); background-color: red;}
-    to { transform: translateY(0px) rotate(-0deg); background-color: black;}
+    to { transform: translateY(0px) rotate(-0deg); background-color: #DE3636;}
 }
 .hamMenuHidden {
     animation-name: fadeOutWholeElement;
@@ -450,7 +465,7 @@ span.hamLine3Closing {
   height: 180px;
   margin: 0;
   padding: 5px;
-  background: white;
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 100%;
 }
 .WMCubeScene {
@@ -616,7 +631,7 @@ span.hamLine3Closing {
 }
 .thought {
   /* display:flex; */
-  background-color:#fff;
+  background-color: rgba(255, 255, 255, 0.95);
   padding:20px;
   border-radius:30px;
   min-width:40px;
@@ -631,7 +646,7 @@ span.hamLine3Closing {
 .thought:before,
 .thought:after {
   content:"";
-  background-color:#fff;
+  background-color: rgba(255, 255, 255, 0.95);
   border-radius:50%;
   display:block;
   position:absolute;
