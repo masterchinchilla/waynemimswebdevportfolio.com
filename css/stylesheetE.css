@@ -718,3 +718,10 @@ span.hamLine3Closing {
     align-self: flex-end;
   }
 }
+.logoSquare {
+  height: 4rem;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
