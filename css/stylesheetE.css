@@ -78,6 +78,7 @@ figure {
   padding: 0.5rem;
 }
 figure.navFig {
+  flex-direction: row;
   font-size: 0.8rem;
   min-width: 0;
   width: 3.5rem;
@@ -176,7 +177,7 @@ li.bizProcessList ul {
 li.bizProcessList li {
   min-height: 2rem;
   min-width: 2rem;
-  max-width: min-content;
+  /*max-width: min-content;*/
   padding: 0.5rem;
 }
 figure.moreInfoOnSectionLink img {
@@ -187,18 +188,21 @@ figure.moreInfoOnSectionLink img {
   min-width: 0;
 }
 figure.moreInfoOnSectionLink {
-    box-shadow: 1px 1px 5px grey;
-    padding: 0.5rem 0.25rem 0.75rem 0.5rem;
-    font-size: 1rem;
-    width: 320px;
-    justify-content: space-between;
+    flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: flex-end;
+    box-shadow: 1px 1px 5px grey;
+    /*padding: 0.5rem 0.25rem 0.75rem 0.5rem;*/
+    font-size: 1rem;
+    min-width: 320px;
 }
 /* figure.moreInfoOnSectionLink:hover {
   height: 4.5rem;
 } */
 figure.moreInfoOnSectionLink img:hover {
   border-style: inset;
+}
+figure.moreInfoOnSectionLink figcaption {
 }
 li.FCXConnected ul {
   flex-wrap: nowrap;
@@ -271,8 +275,8 @@ img.sitePreview {
     height: auto;
 }
 footer {
-    border-radius: 20px 20px 0 0;
-    box-shadow: 1px 1px 5px grey;
+    /*border-radius: 20px 20px 0 0;
+    box-shadow: 1px 1px 5px grey;*/
     margin: 10px 0 0 0;
 }
 footer nav {
@@ -722,10 +726,12 @@ span.hamLine3Closing {
     align-self: flex-end;
   }
 }
-.logoSquare {
+img.logoSquare {
   height: 4rem;
   width: auto;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  border-radius: 0;
+}
+figcaption.logoCap {
+  font-size: 0.75rem;
+  white-space: wrap;
 }
