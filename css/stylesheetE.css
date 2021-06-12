@@ -32,7 +32,7 @@ h1 {
     font-weight: bold;
     width: 100%;
 }
-h1.nameSiteTitle {
+h1.pgTitle {
 	/*font-family: "arial black";
   -webkit-text-stroke: 2px black;*/
   font-size: 300%;
@@ -40,6 +40,7 @@ h1.nameSiteTitle {
   /*color: #ffc100;*/
   color: white;
   text-shadow: 3px 3px 6px #de4c36, 3px -3px 6px #de4c36, -3px 3px 6px #de4c36, -3px -3px 6px #de4c36;
+  margin: 1rem 0;
 }
 nav, section, ul {
   width: 100%;
@@ -59,17 +60,13 @@ main, footer, nav, section, details, summary, div, ul, li, figure, figcaption, h
   margin: 0.25rem;
   border-radius: 20px;
   min-width: 4rem;
+  background: #FFFFFF;
   
 }
-  nav, ul {
-    background: #FFFFFF;
+  h1,img, main, section, figcaption {
+    background: transparent;
   }
 main {
-  /*background-color: rgba(255, 255, 255, 0.5);*/
-  border-radius: 20px 20px 0 0;
-  width: -webkit-fill-available;
-  margin: 0;
-  padding: 0;
   margin-top: -20px;
 }
 figure {
@@ -130,10 +127,10 @@ nav ul {
 h2.taglineSiteSubtitle {
   padding: 1.5rem 0 3rem 0;
 }
-li.skillIcon {
+.skillIcon {
   box-shadow: 1px 1px 5px grey;
 }
-li.skillIcon img {
+.skillIcon img {
   height: 4rem;
   max-width: 4rem;
   border-radius: 0;
@@ -142,7 +139,7 @@ li.AdobeBox {
   padding: 0.5rem;
   width: 9rem;
 }
-ul.skillLists li {
+.skillLists * {
   max-width: 20rem;
 }
 ul.backgroundUl {
@@ -475,6 +472,7 @@ span.hamLine3Closing {
   width: 100%;
   height: 180px;
   margin-top: 2rem;
+  background: transparent;
 }
 .WMDevTextCircle {
   position: absolute;
@@ -653,6 +651,7 @@ span.hamLine3Closing {
   display: flex;
   justify-content: center;
   padding-bottom: 40px;
+  background: transparent;
 }
 .thought {
   /* display:flex; */
@@ -730,6 +729,9 @@ img.logoSquare {
   height: 4rem;
   width: auto;
   border-radius: 0;
+}
+img.roundedLogo {
+  border-radius: 10px;
 }
 figcaption.logoCap {
   font-size: 0.75rem;
