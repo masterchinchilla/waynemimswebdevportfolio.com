@@ -129,10 +129,11 @@ h2.taglineSiteSubtitle {
 }
 .skillIcon {
   box-shadow: 1px 1px 5px grey;
+  height: 6rem;
 }
 .skillIcon img {
   height: 4rem;
-  max-width: 4rem;
+  /*max-width: 4rem;*/
   border-radius: 0;
 }
 li.AdobeBox {
@@ -736,4 +737,5 @@ img.roundedLogo {
 figcaption.logoCap {
   font-size: 0.75rem;
   white-space: wrap;
+  width: min-content;
 }
