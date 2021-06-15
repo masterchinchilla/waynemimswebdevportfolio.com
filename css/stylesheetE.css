@@ -72,6 +72,9 @@ main, footer, nav, section, details, summary, div, ul, li, figure, figcaption, h
 main {
   /*margin-top: -20px;*/
 }
+li.navFigLi {
+  background: none;
+}
 figure {
   flex-direction: column;
   background-color: #FFFFFF;
@@ -90,7 +93,8 @@ figure.navFig {
   line-height: 1em;
   transition: bottom 0.25s;
 }
-figure.navFig:hover {
+.navFig:hover {
+  position: relative;
   bottom: 0.5rem;
 }
 figure.currentPgNavFig {
@@ -296,18 +300,24 @@ footer svg {
   height: 1.5rem;
   min-width: 0;
   border-radius: 0;
+  position: relative;
+  bottom: 0;
+  transition: bottom 0.25s;
 }
 footer i {
   font-size: 2.2rem;
   margin: 0 0.25rem;
+  position: relative;
+  bottom: 0;
+  transition: bottom 0.25s;
 }
-footer svg:hover {
+/*footer svg:hover {
   height: 1.7rem;
   width: 1.7rem;
 }
 footer i:hover {
 font-size: 2.5rem;
-}
+}*/
 ul.siteMapWhole {
 	column-count: 2;
 	font-weight: bold;
@@ -373,6 +383,13 @@ div.hamMenuVisible {
 div.hamMenuVisible ul {
   margin-top: 0;
   padding: 0.5rem;
+  background: none;
+}
+div.hamMenuVisible li {
+  background: none;
+}
+div.hamMenuVisible a:hover {
+  text-shadow: 0.5px 0.5px black;
 }
 #hamMenuIcon span {
   display: block;
@@ -387,7 +404,7 @@ div.hamMenuVisible ul {
   z-index: 100;
 }
 #hamMenuIcon span:hover {
-  background-color: white;
+  /*background-color: white;*/
 }
 #hamMenuIcon span:nth-child(1) {
   top: 0px;
@@ -487,17 +504,18 @@ span.hamLine3Closing {
   padding: 5px;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 100%;
-  transform: rotate(0deg);
+  /*transform: rotate(0deg);*/
   /*transition: transform 2s;*/
 }
 
 .WMDevTextCircle:hover {
   /*transform: rotate(1080deg);*/
-  animation: WMDevTextCircleSpin 3s ease-in-out;
+  animation: WMDevTextCircleSpin 1s ease-in-out;
+  animation-fill-mode: forwards;
 }
 @keyframes WMDevTextCircleSpin {
   0% {transform: rotate(0deg);}
-  100% {transform: rotate(1080deg);}
+  100% {transform: rotate(360deg);}
 }
 .WMCubeScene {
   z-index: 1;
