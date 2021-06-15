@@ -138,14 +138,22 @@ h2.taglineSiteSubtitle {
   box-shadow: 1px 1px 5px grey;
   height: 6rem;
 }
+.SIHP {
+  height: 4.5rem;
+}
 .skillIcon img {
   height: 4rem;
   /*max-width: 4rem;*/
   border-radius: 0;
 }
+.SIHP img {
+  max-height: 4rem;
+  max-width: 4rem;
+}
 li.AdobeBox {
   padding: 0.5rem;
   width: 9rem;
+  height: auto;
 }
 .skillLists * {
   max-width: 20rem;
