@@ -40,7 +40,10 @@ h1.pgTitle {
   /*color: #ffc100;*/
   color: white;
   text-shadow: 3px 3px 6px #de4c36, 3px -3px 6px #de4c36, -3px 3px 6px #de4c36, -3px -3px 6px #de4c36;
-  margin: 1rem 0;
+  margin: 2rem 0 1.5rem 0;
+}
+h1.homePgTitle {
+  margin: 0.75rem 0;
 }
 nav, section, ul {
   width: 100%;
@@ -67,7 +70,7 @@ main, footer, nav, section, details, summary, div, ul, li, figure, figcaption, h
     background: transparent;
   }
 main {
-  margin-top: -20px;
+  /*margin-top: -20px;*/
 }
 figure {
   flex-direction: column;
@@ -272,6 +275,7 @@ img.sitePreview {
     width: 100%;
     height: auto;
 }
+
 footer {
     /*border-radius: 20px 20px 0 0;
     box-shadow: 1px 1px 5px grey;*/
@@ -651,7 +655,7 @@ span.hamLine3Closing {
 .thoughtWrapper {
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
+  /*padding-bottom: 40px;*/
   background: transparent;
 }
 .thought {
@@ -738,4 +742,41 @@ figcaption.logoCap {
   font-size: 0.75rem;
   white-space: wrap;
   width: min-content;
+}
+div.logoGroup {
+  flex-direction: column;
+}
+div.logoGroup h2 {
+}
+div.groupLogos {
+  flex-direction: row;
+  width: max-content;
+  max-width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+div.logoSuperGroup {
+  flex-direction: row;
+  width: fit-content;
+  justify-content: flex-start;
+  align-items: center;
+}
+div.backToTop {
+}
+a.backToTopButton {
+  color: white;
+  font-weight: bolder;
+  font-size: 3rem;
+  display: block;
+  position: fixed;
+  bottom: 2px;
+  right: 10px;
+  background: #DE3636;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  line-height: 3rem;
+  text-align: center;
+  overflow: hidden;
 }
