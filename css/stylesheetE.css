@@ -257,11 +257,13 @@ ul.whyWebDevList {
 }
 ul.projectsList li {
   box-shadow: 1px 1px 5px grey;
-  border: solid 1px white;
   width: 100%;
   display: inline-grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: min-width min-width;
   grid-template-rows: 1fr 3fr 1fr;
+}
+ul.projectsList li * {
+  border: solid 1px black;
 }
 ul.projectsList li h2 {
   grid-column: 1 / 3;
