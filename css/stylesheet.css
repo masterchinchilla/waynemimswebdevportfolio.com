@@ -17,15 +17,12 @@ div.BGContainer {
   background-size: cover;
 }
 header {
-  /* background-color: rgba(255, 255, 255, 0.4); */
   color: rgb(0, 0, 0);
   text-shadow: 3px 3px 6px white, 3px -3px 6px white, -3px 3px 6px white, -3px -3px 6px white;
   min-height: 375px;
   padding-top: 5px;
   font-weight: bolder;
   line-height: 1.5em;
-  /*background-image: url("https://lh3.googleusercontent.com/bsfWzrbOTsTThj5pscNaHDkyxOdkU-AhPyNyx-lsCOBpoL9PHbSJJ_S7zqF7T31Ll1YG45c-AMAunk_fNsVRFv0yMJvYENtN573jN_nkUt4zVPuggTq6IYq1ccfXXkMc5Df0jIxVRQ=w2400");*/
-  
 }
 h1 {
     font-size: 2rem;
@@ -33,11 +30,8 @@ h1 {
     width: 100%;
 }
 h1.pgTitle {
-	/*font-family: "arial black";
-  -webkit-text-stroke: 2px black;*/
   font-size: 300%;
   line-height: 1;
-  /*color: #ffc100;*/
   color: white;
   text-shadow: 3px 3px 6px #de4c36, 3px -3px 6px #de4c36, -3px 3px 6px #de4c36, -3px -3px 6px #de4c36;
   margin: 2rem 0 1.5rem 0;
@@ -64,14 +58,10 @@ main, footer, nav, section, details, summary, div, ul, li, figure, figcaption, h
   border-radius: 20px;
   min-width: 4rem;
   background: #FFFFFF;
-  
 }
-  h1,img, main, section, figcaption {
+h1,img, main, section, figcaption {
     background: transparent;
   }
-main {
-  /*margin-top: -20px;*/
-}
 li.navFigLi {
   background: none;
 }
@@ -143,7 +133,6 @@ h2.taglineSiteSubtitle {
 }
 .skillIcon img {
   height: 4rem;
-  /*max-width: 4rem;*/
   border-radius: 0;
 }
 .SIHP img {
@@ -209,9 +198,9 @@ figure.moreInfoOnSectionLink {
     font-size: 1rem;
     min-width: 320px;
 }
-/* figure.moreInfoOnSectionLink:hover {
-  height: 4.5rem;
-} */
+figure.moreInfoOnSkills {
+  max-width: 20rem;
+}
 figure.moreInfoOnSectionLink img:hover {
   border-style: inset;
 }
