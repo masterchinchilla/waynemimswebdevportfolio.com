@@ -16,20 +16,9 @@ div.BGContainer {
   background-repeat: no-repeat;
   background-size: cover;
 }
-header {
-  color: rgb(0, 0, 0);
-  text-shadow: 3px 3px 6px white, 3px -3px 6px white, -3px 3px 6px white, -3px -3px 6px white;
-  min-height: 375px;
-  padding-top: 5px;
-  font-weight: bolder;
-  line-height: 1.5em;
-}
 h1.pgTitle {
-  font-size: 300%;
-  line-height: 1;
   color: white;
   text-shadow: 3px 3px 6px #de4c36, 3px -3px 6px #de4c36, -3px 3px 6px #de4c36, -3px -3px 6px #de4c36;
-  margin: 2rem 0 1.5rem 0;
 }
 figure.navFig {
   position: relative;
@@ -41,14 +30,10 @@ figure.navFig {
   bottom: 0.5rem;
 }
 .navImg {
-  height: 2rem;
   fill: #DE3636;
-  margin: 0.25rem;
 }
 i {
-  font-size: 2rem;
   color: #DE3636;
-  text-shadow: none;
 } 
 table {
   border-collapse: separate;
@@ -91,10 +76,7 @@ img.SELogo {
     border-radius: 10px;
     width: 5rem;
 }
-
 footer {
-    /*border-radius: 20px 20px 0 0;
-    box-shadow: 1px 1px 5px grey;*/
     margin: 10px 0 0 0;
 }
 footer nav {
