@@ -127,12 +127,18 @@ h2.taglineSiteSubtitle {
 .skillIcon {
   box-shadow: 1px 1px 5px grey;
   height: 6rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .SIHP {
   height: 4.5rem;
 }
 .skillIcon img {
   height: 4rem;
+  width: 100%;
   border-radius: 0;
 }
 .SIHP img {
@@ -613,103 +619,6 @@ span.hamLine3Closing {
 .WNCubeBGCircle {
   position: absolute;
 }
-.curveText {
-  color: red;
-  position: absolute;
-  font-size: 1.5rem;
-  font-family: 'Playfair Display SC', serif;
-}
-.topCurveText span {
-  margin: 0;
-  padding: 0;
-  display: inline;
-  /* border: solid 1px black; */
-  position: absolute;
-  transform: rotate(-70deg);
-  height: 190px;
-}
-.topCurveText span:nth-of-type(2) {
-  transform: rotate(-54deg)
-}
-.topCurveText span:nth-of-type(3) {
-  transform: rotate(-38deg)
-}
-.topCurveText span:nth-of-type(4) {
-  transform: rotate(-22deg)
-}
-.topCurveText span:nth-of-type(5) {
-  transform: rotate(-6deg)
-}
-.topCurveText span:nth-of-type(6) {
-  transform: rotate(10deg)
-}
-.topCurveText span:nth-of-type(7) {
-  transform: rotate(23deg)
-}
-.topCurveText span:nth-of-type(8) {
-  transform: rotate(39deg)
-}
-.topCurveText span:nth-of-type(9) {
-  transform: rotate(55deg)
-}
-.topCurveText span:nth-of-type(10) {
-  transform: rotate(72deg)
-}
-.bottomCurveText span {
-  margin: 0;
-  padding: 0;
-  display: inline;
-  /* border: solid 1px black; */
-  color: black;
-  position: absolute;
-  display: flex;
-  align-items: flex-end;
-  transform: rotate(79deg);
-  height: 190px;
-  font-size: 1.5rem;
-}
-.bottomCurveText span:nth-of-type(2) {
-  transform: rotate(65deg)
-}
-.bottomCurveText span:nth-of-type(3) {
-  transform: rotate(53deg)
-}
-.bottomCurveText span:nth-of-type(4) {
-  transform: rotate(35deg)
-}
-.bottomCurveText span:nth-of-type(5) {
-  transform: rotate(27deg)
-}
-.bottomCurveText span:nth-of-type(6) {
-  transform: rotate(15deg)
-}
-.bottomCurveText span:nth-of-type(7) {
-  transform: rotate(5deg)
-}
-.bottomCurveText span:nth-of-type(8) {
-  transform: rotate(-5deg)
-}
-.bottomCurveText span:nth-of-type(9) {
-  transform: rotate(-15deg)
-}
-.bottomCurveText span:nth-of-type(10) {
-  transform: rotate(-23deg)
-}
-.bottomCurveText span:nth-of-type(11) {
-  transform: rotate(-35deg)
-}
-.bottomCurveText span:nth-of-type(12) {
-  transform: rotate(-50deg)
-}
-.bottomCurveText span:nth-of-type(13) {
-  transform: rotate(-65deg)
-}
-.bottomCurveText span:nth-of-type(14) {
-  transform: rotate(-75deg)
-}
-.bottomCurveText span:nth-of-type(15) {
-  transform: rotate(-85deg)
-}
 .thoughtWrapper {
   display: flex;
   justify-content: center;
@@ -801,7 +710,7 @@ figcaption.logoCap {
   white-space: wrap;
   width: min-content;
 }
-div.logoGroup {
+/*div.logoGroup {
   flex-direction: column;
 }
 div.logoGroup h2 {
@@ -818,7 +727,7 @@ div.logoSuperGroup {
   width: fit-content;
   justify-content: flex-start;
   align-items: center;
-}
+}*/
 div.backToTop {
 }
 i.backToTopButton {
