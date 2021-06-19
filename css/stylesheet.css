@@ -24,11 +24,6 @@ header {
   font-weight: bolder;
   line-height: 1.5em;
 }
-h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    width: 100%;
-}
 h1.pgTitle {
   font-size: 300%;
   line-height: 1;
@@ -36,66 +31,14 @@ h1.pgTitle {
   text-shadow: 3px 3px 6px #de4c36, 3px -3px 6px #de4c36, -3px 3px 6px #de4c36, -3px -3px 6px #de4c36;
   margin: 2rem 0 1.5rem 0;
 }
-h1.homePgTitle {
-  margin: 0.75rem 0;
-}
-nav, section, ul {
-  width: 100%;
-}
-nav.topNav, nav.topNav ul {
-  background: none;
-}
-main, footer, nav, section, details, summary, div, ul, li, figure, figcaption, h1, h2, h3, h4, p, span, img {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  text-align: center;
-  height: auto;
-  list-style: none;
-  margin: 0.25rem;
-  border-radius: 20px;
-  min-width: 4rem;
-  background: #FFFFFF;
-}
-h1,img, main, section, figcaption {
-    background: transparent;
-  }
-li.navFigLi {
-  background: none;
-}
-figure {
-  flex-direction: column;
-  background-color: #FFFFFF;
-  padding: 0.5rem;
-}
 figure.navFig {
   position: relative;
   bottom: 0rem;
-  flex-direction: row;
-  font-size: 0.8rem;
-  min-width: 0;
-  width: 3.5rem;
-  height: 4rem;
-  margin: 0;
-  padding: 0.2rem;
-  line-height: 1em;
   transition: bottom 0.25s;
 }
 .navFig:hover {
   position: relative;
   bottom: 0.5rem;
-}
-figure.currentPgNavFig {
-  text-decoration: underline;
-  background: yellow;
-}
-figcaption.skillsNavFigCap {
-    margin-top: -0.15em;
-}
-figure img {
-  height: 2rem;
 }
 .navImg {
   height: 2rem;
@@ -106,160 +49,20 @@ i {
   font-size: 2rem;
   color: #DE3636;
   text-shadow: none;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-ul, table {
-  padding: 0.5rem;
-}
-nav ul {
-  align-items: flex-start;
-  box-shadow: none;
-  width: 85%;
-  margin: 0;
-  padding: 0;
-}
-h2.taglineSiteSubtitle {
-  padding: 1.5rem 0 3rem 0;
-}
-.skillIcon {
-  box-shadow: 1px 1px 5px grey;
-  height: 6rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.SIHP {
-  height: 4.5rem;
-}
-.skillIcon img {
-  height: 4rem;
-  width: 100%;
-  border-radius: 0;
-}
-.SIHP img {
-  max-height: 4rem;
-  max-width: 4rem;
-}
-li.AdobeBox {
-  padding: 0.5rem;
-  width: 9rem;
-  height: auto;
-}
-.skillLists * {
-  max-width: 20rem;
-}
-ul.backgroundUl {
-  flex-direction: row;
-}
+} 
 table {
   border-collapse: separate;
 	border-spacing: 0px;
-  padding: 0;
-}
-th, td {
-	text-align: left;
-  padding: 0.5rem;
 }
 td.tableImgTd {
   vertical-align: middle;
 }
-td img {
-  max-width: 90%;
-  height: auto;
-  border-radius: 0;
-}
-ul, li.bizProcessList li {
-  box-shadow: 1px 1px 5px grey;
-  min-height: 5rem;
-  min-width: 5rem;
-}
-li.bizProcessList ul {
-  font-size: 0.8rem;
-  justify-content: flex-start;
-}
-li.bizProcessList li {
-  min-height: 2rem;
-  min-width: 2rem;
-  /*max-width: min-content;*/
-  padding: 0.5rem;
-}
-figure.moreInfoOnSectionLink img {
-  margin-left: 0.5rem;
-  padding: 0.5rem;
-  border: outset 5px lightgrey;
-  border-radius: 20px;
-  min-width: 0;
-}
-figure.moreInfoOnSectionLink {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    box-shadow: 1px 1px 5px grey;
-    /*padding: 0.5rem 0.25rem 0.75rem 0.5rem;*/
-    font-size: 1rem;
-    min-width: 320px;
-}
-figure.moreInfoOnSkills {
-  max-width: 20rem;
-}
-figure.moreInfoOnSectionLink img:hover {
-  border-style: inset;
-}
-figure.moreInfoOnSectionLink figcaption {
-}
-li.FCXConnected ul {
-  flex-wrap: nowrap;
-}
-li.FCXConnectedText {
-  width: 40%;
-}
-figure.PMExFig {
-  width: 100%;
-  height: auto;
-}
-img.projectPlanEx {
-	padding-top: 0.5rem;
-  max-width: 95%;
-  height: auto;
-  border-radius: 20px;
-  border: solid 1px grey;
-  margin: 0.5rem;
-}
-p.certsP {
-  width: 100%;
-}
-figure.certFig {
-  min-height: 20rem;
-  max-height: 40rem;
-}
-img.cert {
-    /*max-height: 20vh;*/
-    width: 100%;
-    height: auto;
-    padding: 0.25rem;
-}
-img.cert:hover {
-  box-shadow: 2px 2px 5px black;
-}
-ul.whyWebDevList {
-  margin: 1rem;
-  box-shadow: none;
-}
 ul.projectsList li {
   box-shadow: 1px 1px 5px grey;
-  width: 100%;
   display: inline-grid;
   grid-template-columns: min-width min-width;
   grid-template-rows: 1fr 3fr 1fr;
 }
-/*ul.projectsList li * {
-  border: solid 1px black;
-}*/
 ul.projectsList li h2 {
   grid-column: 1 / 3;
   grid-row: 1;
@@ -280,23 +83,6 @@ ul.projectsList li p {
   grid-row: 3;
   font-style: italic;
 }
-ul.projectsList figure {
-  width: 100%;
-}
-ul.projectsList figure:first-child {
-  width: 100%;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-}
-figure.sitePreviewFig * {
-  width: 100%;
-  margin: 0.5rem;
-}
-img.projectLogo {
-  height: 5rem;
-  padding: 3px;
-  margin: 0 1rem;
-}
 img.SELogo {
   background-color: black;
 }
@@ -304,15 +90,6 @@ img.SELogo {
     height: auto;
     border-radius: 10px;
     width: 5rem;
-}
-img.projectLogo:hover {
-  box-shadow: 2px 2px 3px black;
-}
-img.sitePreview {
-    align-self: start;
-    margin: 0 0 0 0.5rem;
-    width: 90%;
-    height: auto;
 }
 
 footer {
@@ -346,13 +123,6 @@ footer i {
   bottom: 0;
   transition: bottom 0.25s;
 }
-/*footer svg:hover {
-  height: 1.7rem;
-  width: 1.7rem;
-}
-footer i:hover {
-font-size: 2.5rem;
-}*/
 ul.siteMapWhole {
 	column-count: 2;
 	font-weight: bold;
@@ -523,9 +293,6 @@ span.hamLine3Closing {
     100% {opacity:0;}
 }
 .WMCubeRow {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   width: 100%;
   height: 180px;
   margin-top: 2rem;
@@ -539,12 +306,9 @@ span.hamLine3Closing {
   padding: 5px;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 100%;
-  /*transform: rotate(0deg);*/
-  /*transition: transform 2s;*/
 }
 
 .WMDevTextCircle:hover {
-  /*transform: rotate(1080deg);*/
   animation: WMDevTextCircleSpin 1s ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -558,7 +322,6 @@ span.hamLine3Closing {
   height: 125px;
   perspective: 150px;
   border-radius: 100%;
-  /*background: #de4c36;*/
   background: #DE3636;
   position: absolute;
 }
@@ -567,10 +330,6 @@ span.hamLine3Closing {
     transform: rotateY(135deg);
     animation: cubeRotate 10s infinite ease-in-out;
 }
-/*.WMCube:hover {
-  animation: cubeSpin 10s ease-in-out;
-}*/
-
 @keyframes cubeRotate {
   0% { transform: rotateY(135deg) rotateX(0deg) rotateZ(0deg); }
   25% { transform: rotateY(135deg) rotateX(0deg) rotateZ(0deg); }
@@ -592,9 +351,6 @@ span.hamLine3Closing {
 }
 .WMCubeMSideOuter {
   fill: none;
-  /*stroke: #FB0504;
-  stroke-miterlimit: 10;
-  stroke-width: 15px;*/
 }
 .cubeFaceTop {
     transform: rotateX(90deg) translateZ(32px);
@@ -602,14 +358,12 @@ span.hamLine3Closing {
 .cubeFaceBottom {
     transform: rotateX(-90deg) translateZ(32px) rotateZ(180deg);
 }
-
 .cubeFaceRight {
     transform: rotateY(90deg) translateZ(32px);
 }
 .cubeFaceLeft {
     transform: rotateY(-90deg) translateZ(32px);
 }
-
 .cubeFaceFront {
     transform: rotateX(0deg) translateZ(32px);
 }
@@ -626,7 +380,6 @@ span.hamLine3Closing {
   background: transparent;
 }
 .thought {
-  /* display:flex; */
   background-color: #FFFFFF;
   padding:20px;
   border-radius:30px;
@@ -697,60 +450,17 @@ span.hamLine3Closing {
     align-self: flex-end;
   }
 }
-img.logoSquare {
-  height: 4rem;
-  width: auto;
-  border-radius: 0;
-}
-img.roundedLogo {
-  border-radius: 10px;
-}
-figcaption.logoCap {
-  font-size: 0.75rem;
-  white-space: wrap;
-  width: min-content;
-}
-/*div.logoGroup {
-  flex-direction: column;
-}
-div.logoGroup h2 {
-}
-div.groupLogos {
-  flex-direction: row;
-  width: max-content;
-  max-width: 100%;
-  justify-content: center;
-  align-items: flex-start;
-}
-div.logoSuperGroup {
-  flex-direction: row;
-  width: fit-content;
-  justify-content: flex-start;
-  align-items: center;
-}*/
-div.backToTop {
-}
 i.backToTopButton {
   color: #DE3636;
-  /*font-weight: bolder;*/
   font-size: 2rem;
-  /*display: block;*/
   position: fixed;
   bottom: 0px;
   right: 8px;
   background: white;
-  /*background-size: 3px;
-  background-position: center;*/
   border-radius: 100%;
-  /*width: 40px;
-  height: 40px;
-  padding-bottom: -10px;
-  line-height: 3rem;
-  text-align: center;
-  overflow: hidden;*/
   border: solid 1px #DE3636;
   transition: bottom 0.25s;
 }
 i.backToTopButton:hover {
   bottom: 10px;
-}
+}""
