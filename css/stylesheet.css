@@ -2,6 +2,11 @@ body {
   font-family: 'roboto', sans-serif;
   font-size: 13pt;
   margin: 0;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 div.BGContainer {  
   position: fixed;
@@ -16,23 +21,47 @@ div.BGContainer {
   background-repeat: no-repeat;
   background-size: cover;
 }
+section, figure, footer, div {
+  border-radius: 20px;
+  padding: 0.75rem;
+  box-shadow: 1px 1px 5px grey;
+  background: white;
+}
+img {
+  max-width: 90%;
+  border-radius: 20px;
+}
+figure {
+  height: 6rem;
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav i, figure svg, figure img {
+  height: 4rem;
+  font-size: 4rem;
+}
+nav {
+}
 h1.pgTitle {
   color: white;
   text-shadow: 3px 3px 6px #de4c36, 3px -3px 6px #de4c36, -3px 3px 6px #de4c36, -3px -3px 6px #de4c36;
 }
-figure.navFig {
+header nav figure {
   position: relative;
   bottom: 0rem;
   transition: bottom 0.25s;
 }
-.navFig:hover {
+nav figure:hover {
   position: relative;
   bottom: 0.5rem;
 }
-.navImg {
+nav svg {
   fill: #DE3636;
 }
-i {
+nav i {
   color: #DE3636;
 } 
 table {
