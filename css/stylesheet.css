@@ -29,21 +29,27 @@ section, figure, footer, div {
 }
 img {
   max-width: 90%;
-  border-radius: 20px;
+}
+nav i, figure svg, figure img {
+  height: 4rem;
+  min-width: 4rem;
+  font-size: 4rem;
+}
+nav ul, section, section ul, section ul ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+section, section ul, figure {
+  flex-direction: column;
+}
+section.certsSctn ul {
+  flex-direction: row;
 }
 figure {
   height: 6rem;
   width: min-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-nav i, figure svg, figure img {
-  height: 4rem;
-  font-size: 4rem;
-}
-nav {
 }
 h1.pgTitle {
   color: white;
@@ -218,9 +224,6 @@ div.hamMenuVisible a:hover {
   opacity: 1;
   left: 0px;
   z-index: 100;
-}
-#hamMenuIcon span:hover {
-  /*background-color: white;*/
 }
 #hamMenuIcon span:nth-child(1) {
   top: 0px;
@@ -474,4 +477,4 @@ i.backToTopButton {
 }
 i.backToTopButton:hover {
   bottom: 10px;
-}""
+}
