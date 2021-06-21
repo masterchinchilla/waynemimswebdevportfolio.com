@@ -313,13 +313,14 @@ span.hamLine3Closing {
   background: transparent;
 }
 .WMDevTextCircle {
-  position: absolute;
   width: 180px;
   height: 180px;
   margin: 0;
   padding: 5px;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .WMDevTextCircle:hover {
@@ -328,21 +329,29 @@ span.hamLine3Closing {
 }
 @keyframes WMDevTextCircleSpin {
   0% {transform: rotate(0deg);}
-  100% {transform: rotate(360deg);}
+  100% {transform: rotate(3""60deg);}
 }
 .WMCubeScene {
   z-index: 1;
   width: 125px;
   height: 125px;
-  perspective: 150px;
+  /*perspective: 150px;*/
   border-radius: 100%;
   background: #DE3636;
+  box-shadow: none;
+  display: block;
+  margin: 0 auto;
   position: absolute;
 }
 .WMCube {
-    transform-style: preserve-3d;
+    /*transform-style: preserve-3d;
     transform: rotateY(135deg);
-    animation: cubeRotate 10s infinite ease-in-out;
+    animation: cubeRotate 10s infinite ease-in-out;*/
+    background: none;
+    box-shadow: none;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
 }
 @keyframes cubeRotate {
   0% { transform: rotateY(135deg) rotateX(0deg) rotateZ(0deg); }
@@ -355,10 +364,15 @@ span.hamLine3Closing {
   100% { transform: rotateX(-225deg) rotateZ(-225deg); }
 }
 .WMCubeSide {
+    display: block;
+    margin: 0 auto;
     position: absolute;
 }
 .WMCubeBG {
     fill: #DE3636;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
 }
 .WMCubeLetter {
     fill: white;
@@ -366,7 +380,7 @@ span.hamLine3Closing {
 .WMCubeMSideOuter {
   fill: none;
 }
-.cubeFaceTop {
+/*.cubeFaceTop {
     transform: rotateX(90deg) translateZ(32px);
 }
 .cubeFaceBottom {
@@ -386,7 +400,7 @@ span.hamLine3Closing {
 }
 .WNCubeBGCircle {
   position: absolute;
-}
+}*/
 .thoughtWrapper {
   display: flex;
   justify-content: center;
