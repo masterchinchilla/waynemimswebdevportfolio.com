@@ -23,9 +23,9 @@ div.BGContainer {
 }
 section, figure, footer, div {
   border-radius: 20px;
-  padding: 0.75rem;
   box-shadow: 1px 1px 5px grey;
   background: white;
+  padding: 0.75rem
 }
 img {
   max-width: 90%;
@@ -51,12 +51,43 @@ figure {
   height: 6rem;
   width: min-content;
 }
+h1, h2, h3, h4, h5, h6, li, a, p, figcaption {
+ 	padding: 0.15rem;
+	margin: 0.15rem;
+	white-space: wrap;
+}
+li, a, p {
+  font-size: 1rem;
+}
+figcaption {
+ font-size: 0.8rem;
+}
+h6 {
+ font-size: 1.15rem;
+}
+h5 {
+ font-size: 1.25rem;
+}
+h4 {
+ font-size: 1.3rem;
+}
+h3 {
+ font-size: 1.4rem;
+}
+h2 {
+ font-size: 1.5rem;
+}
+h1 {
+ font-size: 2rem;
+}
 h1.pgTitle {
   color: white;
   text-shadow: 3px 3px 6px #de4c36, 3px -3px 6px #de4c36, -3px 3px 6px #de4c36, -3px -3px 6px #de4c36;
 }
 header nav figure {
   position: relative;
+  height: min-content;
+  width: min-content;
   bottom: 0rem;
   transition: bottom 0.25s;
 }
@@ -64,11 +95,12 @@ nav figure:hover {
   position: relative;
   bottom: 0.5rem;
 }
-nav svg {
-  fill: #DE3636;
+.navCap {
+  font-size: 5px;
 }
-nav i {
-  color: #DE3636;
+nav svg, nav i {
+  fill: #DE3636;
+  height: 2rem;
 }
 table {
   border-collapse: separate;
