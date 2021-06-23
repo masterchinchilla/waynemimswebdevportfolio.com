@@ -143,6 +143,23 @@ ul.skillList li {
   padding: 0;
   margin: 0;
 }
+figure.moreInfoFig {
+  display: inline-grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+}
+figure.moreInfoFig svg {
+  grid-column: 1;
+  grid-row: 1;
+}
+figure.moreInfoFig i {
+  grid-column: 2;
+  grid-row: 1;
+}
+figure.moreInfoFig figcaption {
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
 table {
   border-collapse: separate;
 	border-spacing: 0px;
