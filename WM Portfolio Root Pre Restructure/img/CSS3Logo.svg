@@ -1,0 +1,72 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 335.29 469.68">
+    <desc>CSS3 Logo</desc>
+    <defs>
+        <style>
+            .CSS3cls-1 {
+                fill: #2062af;
+            }
+
+            .CSS3cls-2 {
+                fill: #3c9cd7;
+            }
+
+            .CSS3cls-3 {
+                fill: #fff;
+            }
+
+            .CSS3cls-4 {
+                fill: url(#linear-gradient);
+            }
+
+            .CSS3cls-5 {
+                fill: url(#linear-gradient-2);
+            }
+
+            .CSS3cls-6 {
+                fill: url(#linear-gradient-3);
+            }
+
+            .CSS3cls-7 {
+                opacity: 0.05;
+                isolation: isolate;
+            }
+
+            .CSS3cls-8 {
+                fill: url(#linear-gradient-4);
+            }
+        </style>
+        <linearGradient id="linear-gradient" x1="-927.15" y1="-292.76" x2="-927.15"
+            y2="-373.56" gradientTransform="translate(1045.93 578.76)"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0.39" stop-color="#d1d3d4" stop-opacity="0" />
+            <stop offset="1" stop-color="#d1d3d4" />
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1="-826.2" y1="-333.06" x2="-826.2"
+            y2="-417.05" xlink:href="#linear-gradient" />
+        <linearGradient id="linear-gradient-3" x1="-975.75" y1="-256.72"
+            x2="-781.68" y2="-256.72" gradientTransform="translate(1045.93 578.76)"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#e8e7e5" />
+            <stop offset="1" stop-color="#fff" />
+        </linearGradient>
+        <linearGradient id="linear-gradient-4" x1="-984.68" y1="-396.48"
+            x2="-773.99" y2="-396.48" xlink:href="#linear-gradient-3" />
+    </defs>
+    <path class="CSS3cls-1"
+        d="M303.85,433,167.64,469.68,31.43,433,0,92.48H335.29Z" />
+    <path class="CSS3cls-2"
+        d="M167.64,120.06V440.42l.31.09,110.23-29.68,25.44-290.77Z" />
+    <path
+        d="M90.34,42.45V22.18h29.57V0H68.16V62.68h51.75V42.45Zm82.77-20.27h20.67V0H142V22.18c6.92,6.92,10.53,10.24,20.54,20.25l-20.54,0V62.68h51.75V42.45L173.11,22.18Zm73.35,0h20.67V0H215.37V22.18c6.93,6.92,10.54,10.24,20.55,20.25l-20.55,0V62.68h51.76V42.45L246.46,22.18Z" />
+    <path class="CSS3cls-3"
+        d="M167.52,205.2,70,245.8,73.27,286l94.25-40.3,100.27-42.86,4.15-41.13L167.52,205.2Z" />
+    <path class="CSS3cls-4" d="M70,245.8,73.26,286l94.26-40.3V205.2Z" />
+    <path class="CSS3cls-5" d="M271.94,161.71,167.52,205.2v40.5l100.27-42.86Z" />
+    <path class="CSS3cls-6"
+        d="M70.18,245.8,73.41,286l144.63.47-3.24,53.59-47.59,13.4-45.74-11.55-2.78-33.27H76.19l5.54,64.23,86,25.41,85.48-24.95L264.25,245.8Z" />
+    <path class="CSS3cls-7"
+        d="M167.52,245.8H70L73.27,286l94.25.3V245.8Zm0,107.53-.46.13-45.74-11.55-2.77-33.27H76l5.54,64.23,85.94,25.41Z" />
+    <path class="CSS3cls-8"
+        d="M61.25,161.71H271.94l-4.15,41.13H66.33l-5.08-41.13Z" />
+    <path class="CSS3cls-7" d="M167.52,161.71H61.25l5.08,41.13H167.52V161.71Z" />
+</svg>

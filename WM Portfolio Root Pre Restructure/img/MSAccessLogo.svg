@@ -1,0 +1,49 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2326.13 2199.25">
+  <desc>MS Access Logo</desc>
+  <defs>
+      <style>
+          .MSAccess-cls-1 {
+              fill: #881421;
+          }
+
+          .MSAccess-cls-2 {
+              fill: #af2031;
+          }
+
+          .MSAccess-cls-3 {
+              fill: #c94f60;
+          }
+
+          .MSAccess-cls-4 {
+              fill: #e08095;
+          }
+
+          .MSAccess-cls-5 {
+              opacity: 0.2;
+          }
+
+          .MSAccess-cls-5,
+          .MSAccess-cls-6 {
+              isolation: isolate;
+          }
+
+          .MSAccess-cls-6 {
+              opacity: 0.1;
+          }
+
+          .MSAccess-cls-7 {
+              fill: #fff;
+          }
+      </style>
+  </defs>
+  <path class="MSAccess-cls-1" d="M549.81,1374.53v549.81c0,151.83,397.64,274.91,888.16,274.91s888.16-123.08,888.16-274.91V1374.53Z" />
+  <path class="MSAccess-cls-2" d="M549.81,824.72v549.81c0,151.83,397.64,274.9,888.16,274.9s888.16-123.07,888.16-274.9V824.72Z" />
+  <path class="MSAccess-cls-3" d="M549.81,274.91V824.72c0,151.83,397.64,274.9,888.16,274.9s888.16-123.07,888.16-274.9V274.91Z" />
+  <ellipse class="MSAccess-cls-4" cx="1437.97" cy="274.91" rx="888.16" ry="274.91" />
+  <path class="MSAccess-cls-5" d="M1226.5,606.06v1114a72.86,72.86,0,0,1-1.69,16.92,97.87,97.87,0,0,1-96.85,81.63H549.81V507.52H1128a98.36,98.36,0,0,1,98.54,98.2Z" />
+  <path class="MSAccess-cls-6" d="M1268.8,606.06V1635.48A142.19,142.19,0,0,1,1128,1776.31H549.81V465.23H1128A141.34,141.34,0,0,1,1268.8,606.06Z" />
+  <path class="MSAccess-cls-5" d="M1226.5,606.06V1635.48a98.36,98.36,0,0,1-98.2,98.54H549.81V507.52H1128a98.36,98.36,0,0,1,98.54,98.2Z" />
+  <path class="MSAccess-cls-6" d="M1184.21,606.06V1635.48A98.37,98.37,0,0,1,1086,1734H549.81V507.52h535.86a98.36,98.36,0,0,1,98.54,98.2Z" />
+  <rect class="MSAccess-cls-2" y="507.52" width="1184.21" height="1184.21" rx="98.67" />
+  <path class="MSAccess-cls-7" d="M521.22,778.87H666.58l233.5,641.46H762.76l-51.43-153H471.1l-50.54,153H284.13Zm159.24,389.65L605.77,936.33A308.21,308.21,0,0,1,591.89,884h-2.7a297,297,0,0,1-13.41,53.71l-75.58,230.8Z" />
+</svg>
