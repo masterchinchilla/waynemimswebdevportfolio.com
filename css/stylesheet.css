@@ -51,13 +51,17 @@ header {
 section, section ul, figure, nav figure {
   flex-direction: column;
 }
-section.certsSctn ul {
-  flex-direction: row;
-}
 figure {
   height: 6rem;
   width: min-content;
   font-size: 0.8em;
+}
+section.certsSctn figure {
+  width: 100%;
+  height: 100%;
+}
+section.certsSctn img {
+  width: 10rem;
 }
 h1, h2, h3, h4, h5, h6, li, a, p, figcaption {
  	padding: 0.15rem;
@@ -133,35 +137,44 @@ figure.toolsFig svg {
 figure.toolsFig figcaption {
   margin-bottom: 0.2rem;
 }
-ul.skillList {
+ul.wideList {
+  flex-direction: row;
   justify-content: flex-start;
   flex-wrap: nowrap;
   max-width: 90vw;
   overflow: scroll;
 }
-ul.skillList li {
+ul.wideList li {
   padding: 0;
   margin: 0;
 }
 figure.moreInfoFig {
-  display: inline-grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 2fr 1fr;
+  display: grid;
+  grid-template-areas: "icon arrow"
+                       "caption arrow";
   align-items: center;
+  width: 7.5rem;
 }
-figure.moreInfoFig svg {
-  grid-column: 1;
-  grid-row: 1;
+.moreInfoFig svg {
+  /*fill: #DE3636;*/
+  height: 3.25rem
 }
-figure.moreInfoFig img {
-  grid-column: 2;
-  grid-row: 1 / 3;
+.moreInfoIcon {
+  grid-area: icon;
+  border-radius: 20px;
 }
-figure.moreInfoFig figcaption {
-  grid-column: 1;
-  grid-row: 2;
-  /* display: flex; */
-  /* justify-content: center; */
+.moreInfoIcon svg {
+  margin-bottom: 0.65rem;
+}
+.moreInfoArrow {
+  grid-area: arrow;
+  align-self: start;
+}
+.moreInfoArrow svg {
+  height: 6rem;
+}
+.moreInfoCaption {
+  grid-area: caption;
 }
 figure.moreInfoFig a {
   font-size: 0.8rem;
