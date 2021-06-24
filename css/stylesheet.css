@@ -57,12 +57,13 @@ figure {
   font-size: 0.8em;
 }
 section.certsSctn figure {
-height: 100%;
+min-height: 50vw;
+height: fit-content;
 width: min-content;
 }
 section.certsSctn img {
   max-width: unset;
-  height: 9rem;
+  height: 40vw;
 }
 h1, h2, h3, h4, h5, h6, li, a, p, figcaption {
  	padding: 0.15rem;
