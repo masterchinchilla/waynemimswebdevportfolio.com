@@ -136,8 +136,9 @@ ul.wideList {
   flex-wrap: nowrap;
   max-width: 90vw;
   overflow: scroll;
+  margin-left: -2rem;
 }
-ul.wideList li {
+ul.wideList li:not(li.wideList1stLi) {
   padding: 0;
   margin: 0;
 }
@@ -167,16 +168,33 @@ figure.moreInfoFig {
   grid-area: arrow;
   align-self: start;
 }
-svg.scrollArrow {
-  height: 4rem;
+li.scrollArrowLi {
   position: absolute;
-  fill: #DEDEDE;
+}
+li.arrowLiRight {
+  justify-self: flex-end;
+}
+li.scrollArrowLi figure {
+  display: flex;
+  justify-content: center;
+}
+svg.scrollArrow {
+  min-width: unset;
+  /* height: 4rem;
+  position: absolute;
+  fill: #DEDEDE; */
 }
 svg.scrollLeft {
-  transform: translateY(2rem) rotateZ(180deg) translateX(50vw);
+  transform: rotateZ(180deg);
 }
 svg.scrollRight {
-  transform: translateY(-6rem) translateX(43vw);
+  right: 0;
+}
+li.wideList1stLi {
+  margin-left: 3rem;
+}
+li.wideListLastLi {
+  margin-right: 3rem;
 }
 section.skillsSctn .moreInfoArrow svg {
   height: 6rem;
