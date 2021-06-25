@@ -56,15 +56,6 @@ figure {
   width: min-content;
   font-size: 0.8em;
 }
-section.certsSctn figure {
-min-height: 50vw;
-height: fit-content;
-width: min-content;
-}
-section.certsSctn img {
-  max-width: unset;
-  height: 40vw;
-}
 h1, h2, h3, h4, h5, h6, li, a, p, figcaption {
  	padding: 0.15rem;
 	margin: 0.15rem;
@@ -172,7 +163,7 @@ figure.moreInfoFig {
   grid-area: arrow;
   align-self: start;
 }
-.moreInfoArrow svg {
+section.skillsSctn .moreInfoArrow svg {
   height: 6rem;
 }
 .moreInfoCaption {
@@ -182,6 +173,24 @@ figure.moreInfoFig a {
   font-size: 0.8rem;
   padding: 0;
   margin: 0;
+}
+section.certsSctn figure {
+min-height: 50vw;
+height: fit-content;
+width: min-content;
+}
+section.certsSctn img {
+  max-width: unset;
+  height: 40vw;
+}
+section.certsSctn svg {
+  height: 38vw;
+}
+section.certsSctn .moreInfoArrow svg {
+  height: 50vw;
+}
+section.certsSctn .moreInfoFig figcaption {
+  font-size: ;
 }
 table {
   border-collapse: separate;
