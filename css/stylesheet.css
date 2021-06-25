@@ -20,7 +20,7 @@ div.BGContainer {
   background-repeat: no-repeat;
   background-size: cover;
 }
-section, figure, footer, div {
+section, figure, footer, div, li.bizProcessList ul, li.bizProcessList ul li {
   border-radius: 20px;
   box-shadow: 1px 1px 5px grey;
   background: white;
@@ -141,6 +141,13 @@ ul.wideList li {
   padding: 0;
   margin: 0;
 }
+img.chromeDevToolsLogo {
+  height: 3.5rem;
+  min-width: unset;
+  max-width: unset;
+  width: auto;
+  margin: 0.25rem 0.25rem -0.25rem 0.25rem;
+}
 figure.moreInfoFig {
   display: grid;
   grid-template-areas: "icon arrow"
@@ -155,9 +162,6 @@ figure.moreInfoFig {
 .moreInfoIcon {
   grid-area: icon;
   border-radius: 20px;
-}
-.moreInfoIcon svg {
-  margin-bottom: 0.65rem;
 }
 .moreInfoArrow {
   grid-area: arrow;
@@ -175,8 +179,7 @@ figure.moreInfoFig a {
   margin: 0;
 }
 section.certsSctn figure {
-min-height: 50vw;
-height: fit-content;
+height: 52vw;
 width: min-content;
 }
 section.certsSctn img {
@@ -186,30 +189,116 @@ section.certsSctn img {
 section.certsSctn svg {
   height: 38vw;
 }
+section.certsSctn .moreInfoIcon {
+  height: 36vw;
+}
+section.certsSctn .moreInfoIcon svg {
+  margin-bottom: 0;
+  height: 36vw;
+}
 section.certsSctn .moreInfoArrow svg {
   height: 50vw;
 }
-section.certsSctn .moreInfoFig figcaption {
-  font-size: ;
+section.certsSctn .moreInfoFig a {
+  font-size: 1rem;
+}
+section.bckgrndSctn figure, section.bckgrndSctn ul {
+  margin: 0.5rem 0;
 }
 table {
   border-collapse: separate;
 	border-spacing: 0px;
 }
+table th, table td {
+  padding: 0.5rem;
+}
 td.tableImgTd {
   vertical-align: middle;
+}
+td.tableImgTd * {
+  max-height: 4rem;
+  margin: 2px 0 0 0;
+  padding: 0;
+}
+li.bizProcessList ul {
+  justify-content: flex-start;
+}
+li.bizProcessList ul li {
+  padding: 0.5rem;
+  margin: 0.25rem;
+  box-shadow: 1px 1px 4px rgb(187, 186, 186);
+}
+figure.PMExFig {
+  width: unset;
+  height: unset;
+  padding: 0;
+}
+.restoredList {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 1.5rem;
+    text-align: left;
+    width: 90%;
+}
+.restoredList a {
+  margin: 0;
+  padding: 0;
+}
+figure.PMExFig img {
+  justify-self: center;
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.1rem;
+  border-radius: 20px;
+  border: solid 1px lightgrey;
+}
+li.FCXConnected ul {
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px grey;
+}
+li.FCXConnected ul li {
+  min-width: 4rem;
+}
+li.FCXConnectedText {
+  width: min-content;
+  text-align: left;
+  padding: 0.5rem;
+}
+section.bckgrndSctn figure.moreInfoFig {
+  flex-direction: row;
+  width: unset;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+section.bckgrndSctn > ul > li {
+  min-width: 278.4px;
+}
+section.bckgrndSctn figure.moreInfoFig figcaption {
+  width: min-content;
 }
 ul.projectsList li {
   box-shadow: 1px 1px 5px grey;
   display: inline-grid;
-  grid-template-columns: min-width min-width;
-  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto auto;
+  border-radius: 20px;
+  min-width: fit-content;
+  width: auto;
+  height: 90vw;
+  margin: 0.5rem;
+}
+ul.projectsList img {
+  border-radius: 20px;
+  padding: 0.25rem;
 }
 ul.projectsList li h2 {
   grid-column: 1 / 3;
   grid-row: 1;
-  font-weight: bolder;
-  font-size: 1.25rem;
 }
 a.projectLogo {
   grid-column: 1;
@@ -233,9 +322,41 @@ img.SELogo {
     border-radius: 10px;
     width: 5rem;
 }
+ul.projectsList img.FCXWikiPreview {
+  padding: 0.5rem;
+}
+img.sitePreview {
+  background: #e8e8e8;
+}
+ul.projectsList li.moreInfoLi {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: unset;
+}
+ul.projectsList figure.moreInfoFig {
+  width: unset;
+}
+ul.projectsList li.moreInfoLi * {
+  box-shadow: none;
+  height: unset;
+}
+ul.projectsList .moreInfoIcon svg {
+  margin-bottom: 0.7rem;
+  height: 36vw;
+}
+ul.projectsList .moreInfoArrow svg {
+  height: 100%;
+}
+ul.projectsList .moreInfoCap a {
+  font-size: 1rem;
+}
 footer {
     margin: 10px 0 0 0;
     border-radius: 20px 20px 0 0;
+}
+ul.projectsList p {
+  padding-bottom: 0.5rem;
 }
 footer nav {
   justify-content: space-around;
@@ -249,26 +370,17 @@ footer nav li {
   min-width: 0;
 }
 footer svg, footer i {
-  height: 1.5rem;
+  height: 1.25rem;
   min-width: 0;
   border-radius: 0;
   position: relative;
   bottom: 0;
   transition: bottom 0.25s;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 ul.siteMapWhole {
 	font-weight: bold;
   margin-bottom: 1rem;
-}
-ul.siteMapWhole li {
-  break-inside: avoid;
-  text-align: left;
-  list-style-type: disc;
-  list-style-position: outside;
-  /* display: list-item;
-  text-align: -webkit-match-parent; */
-  margin-left: 1.5rem;
 }
 ul.siteMapWhole a:hover {
   text-shadow: 0.5px 0.5px black;
@@ -579,6 +691,9 @@ span.hamLine3Closing {
 	column-count: 2;
   margin: 0.5rem;
   }
+  ul.siteMapWhole li {
+  break-inside: avoid;
+}
 }
 .backToTopButton i {
   color: #DE3636;
