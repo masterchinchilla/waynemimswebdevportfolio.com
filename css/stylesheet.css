@@ -134,14 +134,15 @@ ul.wideList {
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  max-width: 90vw;
   overflow: scroll;
-  margin-left: -2rem;
+  /*margin-left: -2rem;*/
+  max-width: 90vw;
 }
-ul.wideList li:not(li.wideList1stLi) {
+ul.wideList li {
   padding: 0;
   margin: 0;
 }
+/*li:not(li.wideList1stLi)*/
 img.chromeDevToolsLogo {
   height: 3.5rem;
   min-width: unset;
@@ -168,13 +169,19 @@ figure.moreInfoFig {
   grid-area: arrow;
   align-self: start;
 }
-li.scrollArrowLi {
-  position: absolute;
+.hrzntlScrllWArrws-Outer {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+li.scrollArrowCont {
 }
 li.arrowLiRight {
-  justify-self: flex-end;
 }
-li.scrollArrowLi figure {
+li.scrollArrowCont figure {
   display: flex;
   justify-content: center;
 }
@@ -190,12 +197,12 @@ svg.scrollLeft {
 svg.scrollRight {
   right: 0;
 }
-li.wideList1stLi {
-  margin-left: 3rem;
+/*li.wideList1stLi {
+ margin-left: 3rem;
 }
 li.wideListLastLi {
   margin-right: 3rem;
-}
+}*/
 section.skillsSctn .moreInfoArrow svg {
   height: 6rem;
 }
@@ -738,3 +745,8 @@ span.hamLine3Closing {
 .backToTopButton i:hover {
   bottom: 10px;
 }
+/* custom scrollbar
+::-webkit-scrollbar { width: 20px; }
+::-webkit-scrollbar-track { background: transparent !important; }
+::-webkit-scrollbar-thumb { background-color: #d6dee1; border-radius: 20px; border: 6px solid transparent; background-clip: content-box; }
+::-webkit-scrollbar-thumb:hover { background-color: #a8bbbf; }*/
