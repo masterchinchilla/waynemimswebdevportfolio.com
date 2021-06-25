@@ -167,6 +167,16 @@ figure.moreInfoFig {
   grid-area: arrow;
   align-self: start;
 }
+svg.scrollArrow {
+  height: 4rem;
+  position: absolute;
+}
+svg.scrollLeft {
+  transform: translateY(2rem) rotateZ(180deg) translateX(50vw);
+}
+svg.scrollRight {
+  transform: translateY(-6rem) translateX(43vw);
+}
 section.skillsSctn .moreInfoArrow svg {
   height: 6rem;
 }
