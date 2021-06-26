@@ -1,12 +1,53 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {   
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ol, ul {
+  list-style: none;
+}
+section, figure, footer, div, li.bizProcessList ul, li.bizProcessList ul li {
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px grey;
+  background: white;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+header, nav ul, nav figure, section, section ul, section ul ul, div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+nav ul, .wideList, .bizProcessList ul {
+  flex-direction: row;
+}
+h1, h2, h3, h4, h5, h6, li, a, p, figcaption {
+ 	padding: 0.15rem;
+	margin: 0.15rem;
+}
+nav i, figure svg, figure img {
+  height: 4rem;
+  min-width: 4rem;
+  font-size: 4rem;
+}
+li, a, p {
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
 body {
   font-family: 'roboto', sans-serif;
   font-size: 13pt;
   margin: 0;
   text-align: center;
-}
-a {
-  text-decoration: none;
-  color: black;
+  line-height: 1;
 }
 div.BGContainer {  
   position: fixed;
@@ -20,49 +61,16 @@ div.BGContainer {
   background-repeat: no-repeat;
   background-size: cover;
 }
-section, figure, footer, div, li.bizProcessList ul, li.bizProcessList ul li {
-  border-radius: 20px;
-  box-shadow: 1px 1px 5px grey;
-  background: white;
-  padding: 0.5rem;
-  margin: 0.5rem;
-}
 header div {
   box-shadow: none;
 }
 img {
   max-width: 90%;
 }
-nav i, figure svg, figure img {
-  height: 4rem;
-  min-width: 4rem;
-  font-size: 4rem;
-}
-header, nav ul, nav figure, section, section ul, section ul ul, div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-header {
-  flex-direction: column;
-}
-section, section ul, figure, nav figure {
-  flex-direction: column;
-}
 figure {
   height: 6rem;
   width: min-content;
   font-size: 0.8em;
-}
-h1, h2, h3, h4, h5, h6, li, a, p, figcaption {
- 	padding: 0.15rem;
-	margin: 0.15rem;
-	white-space: wrap;
-}
-li, a, p {
-  font-size: 1rem;
 }
 h6 {
  font-size: 1.15rem;
@@ -102,9 +110,6 @@ header nav figure {
 nav figure * {
   font-size: 0.7rem;
   min-width: 0;
-  max-width: 3.5rem;
-  max-height: 4rem;
-  text-align: center;
   padding: 0;
   margin: 0;
 }
@@ -142,7 +147,6 @@ ul.wideList li {
   padding: 0;
   margin: 0;
 }
-/*li:not(li.wideList1stLi)*/
 img.chromeDevToolsLogo {
   height: 3.5rem;
   min-width: unset;
@@ -158,7 +162,6 @@ figure.moreInfoFig {
   width: 7.5rem;
 }
 .moreInfoFig svg {
-  /*fill: #DE3636;*/
   height: 3.25rem
 }
 .moreInfoIcon {
@@ -177,19 +180,12 @@ figure.moreInfoFig {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-li.scrollArrowCont {
-}
-li.arrowLiRight {
-}
 li.scrollArrowCont figure {
   display: flex;
   justify-content: center;
 }
 svg.scrollArrow {
   min-width: unset;
-  /* height: 4rem;
-  position: absolute;
-  fill: #DEDEDE; */
 }
 svg.scrollLeft {
   transform: rotateZ(180deg);
@@ -197,12 +193,6 @@ svg.scrollLeft {
 svg.scrollRight {
   right: 0;
 }
-/*li.wideList1stLi {
- margin-left: 3rem;
-}
-li.wideListLastLi {
-  margin-right: 3rem;
-}*/
 section.skillsSctn .moreInfoArrow svg {
   height: 6rem;
 }
