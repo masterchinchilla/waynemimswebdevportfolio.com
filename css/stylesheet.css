@@ -120,9 +120,9 @@ nav figure:hover {
 nav figcaption {
   padding-top: 0.1rem;
 }
-nav svg, nav i {
-  color: #DE3636;
-  fill: #DE3636;
+nav svg, nav i, nav img {
+  /*color: #DE3636;
+  fill: #DE3636;*/
   height: 2rem;
   font-size: 2rem;
 }
@@ -171,27 +171,6 @@ figure.moreInfoFig {
 .moreInfoArrow {
   grid-area: arrow;
   align-self: start;
-}
-.hrzntlScrllWArrws-Outer {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-li.scrollArrowCont figure {
-  display: flex;
-  justify-content: center;
-}
-svg.scrollArrow {
-  min-width: unset;
-}
-svg.scrollLeft {
-  transform: rotateZ(180deg);
-}
-svg.scrollRight {
-  right: 0;
 }
 section.skillsSctn .moreInfoArrow svg {
   height: 6rem;
@@ -346,11 +325,6 @@ ul.projectsList li p {
 }
 img.SELogo {
   background-color: black;
-}
-#FCXTikiLogo {
-    height: auto;
-    border-radius: 10px;
-    width: 5rem;
 }
 ul.projectsList img.FCXWikiPreview {
   padding: 0.5rem;
