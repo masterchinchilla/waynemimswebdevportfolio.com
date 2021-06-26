@@ -41,6 +41,9 @@ li, a, p {
 a {
   text-decoration: none;
   color: black;
+  position: relative;
+  bottom: 0rem;
+  transition: bottom 0.25s;
 }
 body {
   font-family: 'roboto', sans-serif;
@@ -99,11 +102,8 @@ header nav {
   width: 80%;
 }
 header nav figure {
-  position: relative;
   height: 4rem;
   width: 3.5rem;
-  bottom: 0rem;
-  transition: bottom 0.25s;
   padding: 0;
   margin: 0;
 }
@@ -264,16 +264,18 @@ figure.PMExFig img {
   border: solid 1px lightgrey;
 }
 li.FCXConnected ul {
-  flex-direction: row;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   border-radius: 20px;
   box-shadow: 1px 1px 5px grey;
+  align-items: center;
+  padding: 0.5rem;
 }
 li.FCXConnected ul li {
   min-width: 4rem;
 }
 li.FCXConnectedText {
-  width: min-content;
   text-align: left;
   padding: 0.5rem;
 }
@@ -285,9 +287,9 @@ section.bckgrndSctn figure.moreInfoFig {
   justify-content: center;
   margin: 0;
 }
-section.bckgrndSctn > ul > li {
+/*section.bckgrndSctn > ul > li {
   min-width: 278.4px;
-}
+}*/
 section.bckgrndSctn figure.moreInfoFig figcaption {
   width: min-content;
 }
