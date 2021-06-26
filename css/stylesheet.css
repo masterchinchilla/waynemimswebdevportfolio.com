@@ -120,17 +120,18 @@ nav figure:hover {
 nav figcaption {
   padding-top: 0.1rem;
 }
-nav svg, nav i, nav img {
-  /*color: #DE3636;
-  fill: #DE3636;*/
+nav img {
   height: 2rem;
-  font-size: 2rem;
+  max-width: unset;
 }
 figure.toolsFig {
   justify-content: flex-end;
 }
-figure.toolsFig svg {
+figure.toolsFig img {
   height: 1.7rem;
+}
+figure.contactFig img {
+  margin-top: 0.2rem;
 }
 figure.toolsFig figcaption {
   margin-bottom: 0.2rem;
@@ -373,14 +374,12 @@ footer nav ul {
 footer nav li {
   min-width: 0;
 }
-footer svg, footer i {
+footer img {
   height: 1.25rem;
   min-width: 0;
-  border-radius: 0;
   position: relative;
   bottom: 0;
   transition: bottom 0.25s;
-  font-size: 1.5rem;
 }
 ul.siteMapWhole {
 	font-weight: bold;
