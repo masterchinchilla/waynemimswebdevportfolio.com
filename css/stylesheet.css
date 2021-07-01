@@ -45,6 +45,9 @@ a {
   bottom: 0rem;
   transition: bottom 0.25s;
 }
+a:hover {
+  bottom: 0.5rem;
+}
 body {
   font-family: 'roboto', sans-serif;
   font-size: 13pt;
@@ -113,10 +116,10 @@ nav figure * {
   padding: 0;
   margin: 0;
 }
-nav figure:hover {
+/* nav figure:hover {
   position: relative;
   bottom: 0.5rem;
-}
+} */
 nav figcaption {
   padding-top: 0.1rem;
 }
@@ -419,6 +422,21 @@ div.hamMenu * {
 }
 #hamMenuIcon {
   position: absolute;
+  left: -8px;
+  top: -8px;
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  width: 38px;
+  border-radius: 5px;
+  border: solid 10px rgb(222 54 54 / 0%);
+  transition: border 0.25s;
+}
+#hamMenuIcon:hover {
+  height: 30px;
+  width: 38px;
+  border-radius: 5px;
+  border: solid 4px rgb(222 54 54 / 100%);
 }
 #hamMenuList {
   flex-direction: column;
@@ -712,7 +730,7 @@ span.hamLine3Closing {
   right: 8px;
 }
 .backToTopButton i:hover {
-  bottom: 10px;
+  bottom: 15px;
 }
 ::-webkit-scrollbar {
   width: 8px;
