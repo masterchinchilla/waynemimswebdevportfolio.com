@@ -176,7 +176,7 @@ figure.moreInfoFig {
   grid-area: arrow;
   align-self: start;
 }
-section.skillsSctn .moreInfoArrow img {
+section.skillsSctn .moreInfoArrow {
   height: 6rem;
 }
 .moreInfoCaption {
