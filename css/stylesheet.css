@@ -147,6 +147,7 @@ ul.wideList {
   overflow-x: scroll;
   overflow-y: hidden;
   max-width: 90vw;
+  padding-top: 0.5rem;
 }
 ul.wideList li {
   padding: 0;
@@ -185,10 +186,6 @@ figure.moreInfoFig a {
   font-size: 0.8rem;
   padding: 0;
   margin: 0;
-}
-section.certsSctn ul {
-    height: 15rem;
-    align-items: center;
 }
 section.certsSctn figure {
  height: 11rem;
@@ -446,15 +443,19 @@ div.hamMenu * {
   transition: border 0.25s;
 }
 #hamMenuIcon:hover {
-  height: 30px;
-  width: 38px;
-  border-radius: 5px;
-  border: solid 4px rgb(222 54 54 / 100%);
+    height: 29px;
+    width: 37px;
+    border-radius: 5px;
+    /* border: solid 4px rgb(222 54 54 / 100%); */
+    border: solid 4px rgba(255, 0, 0, 1);
 }
 #hamMenuList {
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.85);
   box-shadow: 1px 1px 5px grey;
+}
+#hamMenuList ul ul {
+  margin: 0.25rem 0 0 1rem;
 }
 h1.hamHeader {
     text-align: center;
