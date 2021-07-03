@@ -116,10 +116,6 @@ nav figure * {
   padding: 0;
   margin: 0;
 }
-/* nav figure:hover {
-  position: relative;
-  bottom: 0.5rem;
-} */
 nav figcaption {
   padding-top: 0.1rem;
 }
@@ -190,10 +186,6 @@ section.skillsSctn .wideList {
   width: 93vw;
   margin-left: -0.5rem;
 }
-section.certsSctn li {
-  /*height: 52vw;
-  width: min-content;*/
-}
 section.certsSctn figure {
  height: 11rem;
 }
@@ -210,9 +202,6 @@ section.certsSctn .moreInfoIcon {
 section.certsSctn .moreInfoArrow  {
   height: 100%;
 }
-/*section.certsSctn .moreInfoFig a {
-  font-size: 1rem;
-}*/
 section.bckgrndSctn figure, section.bckgrndSctn ul {
   margin: 0.5rem 0;
 }
@@ -296,9 +285,6 @@ section.bckgrndSctn figure.moreInfoFig {
   justify-content: center;
   margin: 0;
 }
-/*section.bckgrndSctn > ul > li {
-  min-width: 278.4px;
-}*/
 section.bckgrndSctn figure.moreInfoFig figcaption {
   width: min-content;
 }
@@ -431,7 +417,6 @@ div.hamMenu * {
   background: none;
   box-shadow: none;
   text-align: left;
-  /* border: solid 1px black; */
 }
 #hamMenuIcon {
   position: absolute;
