@@ -26,17 +26,17 @@ header, nav ul, nav figure, section, section ul, section ul ul, div {
 nav ul, .wideList, .bizProcessList ul {
   flex-direction: row;
 }
-h1, h2, h3, h4, h5, h6, li, a, p, figcaption {
- 	padding: 0.15rem;
-	margin: 0.15rem 0;
+h1, h2, h3, h4, h5, h6, p, figcaption {
+ 	padding: 0.2rem;
+	margin: 0.2rem;
 }
-figure svg, figure img {
+figure img {
   height: 4rem;
   min-width: 4rem;
-  font-size: 4rem;
 }
-li, a, p {
+li, p {
   font-size: 1rem;
+  padding: 0.15rem;
 }
 a {
   text-decoration: none;
@@ -44,6 +44,7 @@ a {
   position: relative;
   bottom: 0rem;
   transition: bottom 0.25s;
+  height: fit-content;
 }
 a:hover {
   bottom: 0.5rem;
@@ -123,6 +124,10 @@ nav img {
   height: 2rem;
   max-width: unset;
 }
+nav li {
+  padding: 0.2rem;
+	margin: 0.2rem;
+}
 figure.toolsFig {
   justify-content: flex-end;
 }
@@ -169,7 +174,6 @@ figure.moreInfoFig {
 }
 .moreInfoArrow {
   grid-area: arrow;
-  align-self: start;
 }
 section.skillsSctn .moreInfoArrow {
   height: 6rem;
@@ -182,9 +186,9 @@ figure.moreInfoFig a {
   padding: 0;
   margin: 0;
 }
-section.skillsSctn .wideList {
-  width: 93vw;
-  margin-left: -0.5rem;
+section.certsSctn ul {
+    height: 15rem;
+    align-items: center;
 }
 section.certsSctn figure {
  height: 11rem;
@@ -289,13 +293,17 @@ section.bckgrndSctn figure.moreInfoFig figcaption {
   width: min-content;
 }
 ul.whyWebDevList {
-  max-width: 466.150px;
+  max-width: 600px;
+  align-items: flex-start;
+}
+ul.whyWebDevList li {
+  padding: 0.3rem;
 }
 ul.projectsList li {
   box-shadow: 1px 1px 5px grey;
   display: inline-grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: 3rem auto 6rem;
   border-radius: 20px;
   min-width: fit-content;
   width: auto;
@@ -311,11 +319,13 @@ ul.projectsList img {
 ul.projectsList li h2 {
   grid-column: 1 / 3;
   grid-row: 1;
+  height: 2rem;
 }
-a.projectLogo {
+ul.projectsList .projectLogo {
   grid-column: 1;
   grid-row: 2;
   align-self: start;
+  max-height: 6rem;
 }
 a.projectPreview {
   grid-column: 2;
@@ -325,6 +335,8 @@ ul.projectsList li p {
   grid-column: 1 / 3;
   grid-row: 3;
   font-style: italic;
+  max-width: 40rem;
+  justify-self: center;
 }
 section.bckgrndSctn li.moreInfoLi {
   display: flex;
@@ -332,7 +344,7 @@ section.bckgrndSctn li.moreInfoLi {
 }
 img.SELogo {
   background-color: black;
-  margin-left: 0.25rem;
+  margin-left: 0.5rem;
 }
 #FCXTikiLogo {
   border-radius: 0;
@@ -340,6 +352,9 @@ img.SELogo {
 ul.projectsList img.FCXWikiPreview {
     padding: 0.5rem;
     margin: 0 0.5rem 0 -0.25rem;
+}
+ul.projectsList h2 a {
+  font-size: unset;
 }
 img.sitePreview {
   background: #e8e8e8;
@@ -678,6 +693,11 @@ span.hamLine3Closing {
              -5px 25px 0 -10px #fff;
   
 }
+@media only screen and (min-width: 500px) {
+  ul.projectsList li {
+    height: 70vw;
+  }
+}
 @media only screen and (min-width: 700px) {
   ul.siteMapWhole {
 	column-count: 2;
@@ -695,6 +715,17 @@ span.hamLine3Closing {
   section.bckgrndSctn li.moreInfoLi {
   width: 100vw;
   max-width: unset;
+  }
+  ul.whyWebDevList .restoredList {
+    margin: 0.15rem;
+    padding: 0.3rem;
+    width: auto;
+  }
+  ul.projectsList li {
+    height: 30rem;
+  }
+  .basicsSG {
+  min-height: 427.2px;
 }
 }
 @media only screen and (min-width: 1050px) {
@@ -706,6 +737,12 @@ span.hamLine3Closing {
   li.bizProcessList {
     height: 267.225px;
   }
+  ul.whyWebDevList {
+    flex-direction: column;
+  }
+  ul.projectsList {
+  max-width: 95vw;
+  }
 }
 .backToTopButton i {
   color: #DE3636;
@@ -716,7 +753,7 @@ span.hamLine3Closing {
   transition: bottom 0.25s;
   position: fixed;
   bottom: 8px;
-  right: 8px;
+  right: 12px;
 }
 .backToTopButton i:hover {
   bottom: 15px;
@@ -732,4 +769,30 @@ span.hamLine3Closing {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: rgb(222 54 54 / 50%);
+}
+main.skillsPg section {
+  flex-direction: row;
+  align-items: flex-start;
+}
+main.skillsPg .groupLogos {
+  flex-direction: row;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+.basicsSG {
+  max-width: 350px;
+}
+.mongooseLogo {
+    height: auto;
+    margin: 1.2rem auto;
+}
+.monsterLogo {
+  max-width: unset;
+}
+.wideLogo {
+  width: unset;
+}
+.roundedLogo {
+  border-radius: 10px;
 }
