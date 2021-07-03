@@ -191,30 +191,31 @@ section.skillsSctn .wideList {
   width: 93vw;
   margin-left: -0.5rem;
 }
+section.certsSctn li {
+  /*height: 52vw;
+  width: min-content;*/
+}
 section.certsSctn figure {
-height: 52vw;
-width: min-content;
+ height: fit-content;
+ min-height: 45vw;
 }
 section.certsSctn img {
   max-width: unset;
   height: 40vw;
 }
-section.certsSctn svg {
-  height: 38vw;
+section.certsSctn figure.moreInfoFig {
+  width: 17rem;
+  min-height: 45vw;
 }
 section.certsSctn .moreInfoIcon {
-  height: 36vw;
-}
-section.certsSctn .moreInfoIcon img {
-  margin-bottom: 0;
-  height: 36vw;
+  padding: 0 1.25rem;
 }
 section.certsSctn .moreInfoArrow  {
   height: 50vw;
 }
-section.certsSctn .moreInfoFig a {
+/*section.certsSctn .moreInfoFig a {
   font-size: 1rem;
-}
+}*/
 section.bckgrndSctn figure, section.bckgrndSctn ul {
   margin: 0.5rem 0;
 }
@@ -742,5 +743,5 @@ span.hamLine3Closing {
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: lightgray;
+  background: .rgb(222 54 54 / 50%);
 }
