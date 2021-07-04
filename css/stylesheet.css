@@ -97,9 +97,11 @@ h2 {
 h1 {
  font-size: 2rem;
 }
-h1.pgTitle {
+.redGlowText {
   color: white;
   text-shadow: 3px 3px 6px #de4c36, 3px -3px 6px #de4c36, -3px 3px 6px #de4c36, -3px -3px 6px #de4c36;
+}
+.pgTitle {
   font-size: 300%;
 }
 header nav {
@@ -818,4 +820,23 @@ main.skillsPg .groupLogos {
 }
 .roundedLogo {
   border-radius: 10px;
+}
+.resumePg section, main.resumePg section div {
+  align-items: flex-start;
+  padding: 1rem;
+  line-height: 1.25rem;
+  text-align: left;
+}
+.resumePg section * {
+  align-items: flex-start;
+  padding: 0.25rem;
+  margin: 0.25rem;
+}
+
+.resumePg section li {
+  list-style: disc;
+  margin-left: 1rem;
+}
+.resumePg h1 {
+  margin-bottom: 1.25rem;
 }

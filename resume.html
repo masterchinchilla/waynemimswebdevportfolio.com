@@ -6,7 +6,6 @@
   <title>W Mims Web Portfolio Resume</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous">
   <link rel="stylesheet" href="css/stylesheet.css">
-  <link rel="stylesheet" href="css/resume.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap" rel="stylesheet">
@@ -146,9 +145,9 @@
         </div>
       </div>
     </div>
-    <h1 class="pgTitle">Resume</h1>
+    <h1 class="redGlowText pgTitle">Resume</h1>
   </header>
-  <main>
+  <main class="resumePg">
     <div class="hamMenu">
       <div id="hamMenuIcon" onclick="hamOpenClose()">
         <span id="hamLine1" class="hamClosed"></span>
@@ -160,18 +159,24 @@
         <ul>
           <li><a href="index.html">Home: Portfolio Summary</a></li>
           <li><a href="skills.html">Skills and Tools</a></li>
-          <li><a href="resume.html">Resume - Experience</a></li>
+          <li><a href="resume.html">Resume - Experience</a>
+            <ul>
+              <li><a href="#resSummary">Summary</a></li>
+              <li><a href="#resExprnce">Experience</a></li>
+              <li><a href="#resEdu">Education</a></li>
+            </ul>
+          </li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
     <article>
-    <section>
-      <h2>Summary Statement</h2>
+    <section id="resSummary">
+      <h1 class="redGlowText">Summary Statement</h1>
       <p>Business Process Analyst, Self-Starter AND Finisher seeking opportunities as an Enterprise Software Trainer, Tester, Documenter and/or Implementation Specialist, Consultant or Project Manager (PM).</p>
       <ul>
-        <h2>Summary</h2>
+        <h2 class="redGlowText">Summary</h2>
         <li>2.5 years experience with Business Analysis and Implementation, Training, Testing, Documentation, and non-technical Configuration.</li>
         <li>Learned Enterprise Content Management (ECM), Enterprise Resource Planning (ERP) and Business Process Management (BPM) Software Platform to "Super User" level in 4 months, with no previous IT training.</li>
         <li>Developed and Executed Full-Suite Implementation Strategy at 4 companies in 2 years.</li>
@@ -179,10 +184,10 @@
         <li>Diverse background including work in legal services and work as a Retail Merchandiser for Target Brands.</li>
       </ul>
     </section>
-    <section>
-      <h2>Recent Experience</h2>
+    <section id="resExprnce">
+      <h1 class="redGlowText">Recent Experience</h1>
       <div>
-        <h3>FieldCLIX, Inc.</h3>
+        <h2 class="redGlowText">FieldCLIX, Inc.</h2>
         <p><span class="Job_Title">Implementation Manager and Business Process Consultant</span></p>
         <p><span class="Job_Duration">January 2018 to Present</span></p>
         <ul>
@@ -199,7 +204,7 @@
         </ul>
       </div>
       <div>
-        <h3>Civil Solutions, Inc.</h3>
+        <h2 class="redGlowText">Civil Solutions, Inc.</h2>
         <p><span class="Job_Title">Software Trainer and Implementation Specialist</span></p>
         <p><span class="Job_Duration">May 2016 to December 2017</span></p>
         <ul>
@@ -210,7 +215,7 @@
         </ul>
       </div>
       <div>
-        <h3>Williams Lea Tag, Inc.</h3>
+        <h2 class="redGlowText">Williams Lea Tag, Inc.</h2>
         <p><span class="Job_Title">Front-Desk Receptionist</span></p>
         <p><span class="Job_Duration">December 2015 to May 2016</span></p>
         <ul>
@@ -221,7 +226,7 @@
         </ul>
       </div>
       <div>
-        <h3>Bulldog Process Service, LLC</h3>
+        <h2 class="redGlowText">Bulldog Process Service, LLC</h2>
         <p><span class="Job_Title">Account Manager</span></p>
         <p><span class="Job_Duration">November 2012 to October 2015</span></p>
         <ul>
@@ -235,11 +240,14 @@
           <li>As a New York State Notary, provided hundreds of legal Affidavits per week which are required as further proof of service.</li>
         </ul>
       </div>
-      <section>
-        <h2>Education</h2>
-        <p><span class="Degree_Attained">B.A. Philosophy</span></p>
-        <p><span class="Institution_Name">University of North Texas</span></p>
-        <p><span class="Graduation_Date">08/2009</span></p>
+    </section>
+      <section id="resEdu">
+        <ul>
+        <h1 class="redGlowText">Education</h1>
+        <li>B.A. Philosophy</li>
+        <li>University of North Texas</li>
+        <li>08/2009</li>
+        </ul>
       </section>
     </article>
 	</main>
