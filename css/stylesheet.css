@@ -617,6 +617,7 @@ span.hamLine3Closing {
     background: #DE3636;
     box-shadow: none;
     padding: 0;
+    margin: 0;
 }
 .WMCube {
     transform-style: preserve-3d;
@@ -624,6 +625,7 @@ span.hamLine3Closing {
     box-shadow: none;
     transform: rotateY(135deg);
     animation: cubeRotate 10s infinite ease-in-out;
+    margin: 0;
 }
 @keyframes cubeRotate {
   0% { transform: rotateY(135deg) rotateX(0deg) rotateZ(0deg); }
